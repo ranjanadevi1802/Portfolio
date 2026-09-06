@@ -7,7 +7,7 @@ import {
 } from 'lucide-react'
 import './index.css'
 
-const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -361,7 +361,7 @@ function App() {
           {/* Logo (Center on Desktop) */}
           <div className="nav-logo">
             <div className="logo-circle">
-              <img src={asset('Images/rd logo.png" alt="RD Logo" className="logo-img" />
+              <img src={asset('/Images/rd logo.png')} alt="RD Logo" className="logo-img" />
             </div>
             <span className="logo-text">
               <span className="logo-short">RANJANA</span>
@@ -483,11 +483,11 @@ function App() {
               >
                 {/* Floating Technology Logo Icons */}
                 <div className="floating-tech-container">
-                  <img src="/Icons/Python icon.png" alt="Python" className="tech-logo logo-py" />
-                  <img src="/Icons/Gemini icon.svg" alt="Gemini AI" className="tech-logo logo-gemini" />
-                  <img src="/Icons/Powerbi.webp" alt="Power BI" className="tech-logo logo-bi" />
-                  <img src="/Icons/Postgresql icon.jpg" alt="SQL" className="tech-logo logo-sql" />
-                  <img src="/Icons/Firebase icon.svg" alt="Firebase" className="tech-logo logo-fb" />
+                  <img src={asset('/Icons/Python icon.png')} alt="Python" className="tech-logo logo-py" />
+                  <img src={asset('/Icons/Gemini icon.svg')} alt="Gemini AI" className="tech-logo logo-gemini" />
+                  <img src={asset('/Icons/Powerbi.webp')} alt="Power BI" className="tech-logo logo-bi" />
+                  <img src={asset('/Icons/Postgresql icon.jpg')} alt="SQL" className="tech-logo logo-sql" />
+                  <img src={asset('/Icons/Firebase icon.svg')} alt="Firebase" className="tech-logo logo-fb" />
                 </div>
 
                 <div className="skills-tagline">
@@ -527,8 +527,8 @@ function App() {
                   {/* 1. Data Analytics & Visualization */}
                   <div className="skill-card" style={{ animationDelay: '0s' }}>
                     <div className="card-icons">
-                      <img src="/Icons/Powerbi.webp" alt="Power BI" />
-                      <img src="/Icons/Python icon.png" alt="Python" />
+                      <img src={asset('/Icons/Powerbi.webp')} alt="Power BI" />
+                      <img src={asset('/Icons/Python icon.png')} alt="Python" />
                     </div>
                     <h3 className="card-title">Data Analytics & Visualization</h3>
                     <p className="card-desc">Analyzing complex datasets, designing dynamic Power BI dashboards with custom DAX calculations, and deriving actionable business insights.</p>
@@ -537,7 +537,7 @@ function App() {
                   {/* 2. Database Management & Systems */}
                   <div className="skill-card" style={{ animationDelay: '0.06s' }}>
                     <div className="card-icons">
-                      <img src="/Icons/Mysql icon.png" alt="MySQL" />
+                      <img src={asset('/Icons/Mysql icon.png')} alt="MySQL" />
                     </div>
                     <h3 className="card-title">Database Management & Systems</h3>
                     <p className="card-desc">Designing relational database schemas with MySQL, query optimization, data normalization, and secure data storage management.</p>
@@ -546,9 +546,9 @@ function App() {
                   {/* 3. Programming Languages */}
                   <div className="skill-card" style={{ animationDelay: '0.12s' }}>
                     <div className="card-icons">
-                      <img src="/Icons/Python icon.png" alt="Python" />
-                      <img src="/Icons/C icon.svg" alt="C Language" />
-                      <img src="/Icons/Js icon.webp" alt="JavaScript" />
+                      <img src={asset('/Icons/Python icon.png')} alt="Python" />
+                      <img src={asset('/Icons/C icon.svg')} alt="C Language" />
+                      <img src={asset('/Icons/Js icon.webp')} alt="JavaScript" />
                     </div>
                     <h3 className="card-title">Programming Languages</h3>
                     <p className="card-desc">Proficient in Python, C, Java, and SQL for algorithmic problem solving, scientific computing, and writing clean, scalable software.</p>
@@ -557,10 +557,10 @@ function App() {
                   {/* 4. Web & Information Retrieval */}
                   <div className="skill-card" style={{ animationDelay: '0.18s' }}>
                     <div className="card-icons">
-                      <img src="/Icons/Python icon.png" alt="Flask" />
-                      <img src="/Icons/Html icon.png" alt="HTML" />
-                      <img src="/Icons/Css icon.png" alt="CSS" />
-                      <img src="/Icons/React.png" alt="React" />
+                      <img src={asset('/Icons/Python icon.png')} alt="Flask" />
+                      <img src={asset('/Icons/Html icon.png')} alt="HTML" />
+                      <img src={asset('/Icons/Css icon.png')} alt="CSS" />
+                      <img src={asset('/Icons/React.png')} alt="React" />
                     </div>
                     <h3 className="card-title">Web & Information Retrieval</h3>
                     <p className="card-desc">Developing lightweight Flask web services, TF-IDF search indexing, cosine similarity ranking, and clean web interfaces.</p>
@@ -569,11 +569,11 @@ function App() {
                   {/* 5. Development Tools & Workflow */}
                   <div className="skill-card" style={{ animationDelay: '0.24s' }}>
                     <div className="card-icons">
-                      <img src="/Icons/Vs Code logo.png" alt="VS Code" />
-                      <img src="/Icons/Git icon.svg" alt="Git" />
-                      <img src="/Icons/Github icon.svg" alt="GitHub" />
-                      <img src="/Icons/Postman icon.svg" alt="Postman" />
-                      <img src="/Icons/Canva icon.svg" alt="Canva" />
+                      <img src={asset('/Icons/Vs Code logo.png')} alt="VS Code" />
+                      <img src={asset('/Icons/Git icon.svg')} alt="Git" />
+                      <img src={asset('/Icons/Github icon.svg')} alt="GitHub" />
+                      <img src={asset('/Icons/Postman icon.svg')} alt="Postman" />
+                      <img src={asset('/Icons/Canva icon.svg')} alt="Canva" />
                     </div>
                     <h3 className="card-title">Development Tools & Workflow</h3>
                     <p className="card-desc">Git version control, collaborative GitHub workflows, API verification with Postman, and modern IDE development environments.</p>
@@ -582,9 +582,9 @@ function App() {
                   {/* 6. AI & Predictive Modeling */}
                   <div className="skill-card" style={{ animationDelay: '0.3s' }}>
                     <div className="card-icons">
-                      <img src="/Icons/Gemini icon.svg" alt="Gemini AI" />
-                      <img src="/Icons/Claude icon.svg" alt="Claude AI" />
-                      <img src="/Icons/Chatgpt icon.png" alt="ChatGPT" />
+                      <img src={asset('/Icons/Gemini icon.svg')} alt="Gemini AI" />
+                      <img src={asset('/Icons/Claude icon.svg')} alt="Claude AI" />
+                      <img src={asset('/Icons/Chatgpt icon.png')} alt="ChatGPT" />
                     </div>
                     <h3 className="card-title">AI & Predictive Modeling</h3>
                     <p className="card-desc">Building machine learning workflows with scikit-learn, statistical modeling, and integrating Google Gemini and Vertex AI for intelligent systems.</p>
@@ -607,7 +607,7 @@ function App() {
                   {/* 8. Scientific & Numerical Research */}
                   <div className="skill-card" style={{ animationDelay: '0.42s' }}>
                     <div className="card-icons">
-                      <img src={asset('Images/iisc.png" alt="IISc" style={{ borderRadius: '50 % ', objectFit: 'contain' }} />
+                      <img src={asset('/Images/iisc.png" alt="IISc')} style={{ borderRadius: '50 % ', objectFit: 'contain' }} />
                     </div>
                     <h3 className="card-title">Scientific & Numerical Research</h3>
                     <p className="card-desc">Algorithm simulations in Python for Numerical Analysis (Newton's method, piecewise interpolation) and QSAR predictive modeling (IISc).</p>
@@ -738,7 +738,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2023 - Present (Exp. 2027)</span>
                             <div className="timeline-circle-badge orange-theme">
-                              <img src={asset('Images/wec.jpg" alt="Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                              <img src={asset('/Images/wec.jpg" alt=')} Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
                             </div>
                             <div className="timeline-connector-line"></div>
                           </div>
@@ -772,7 +772,7 @@ function App() {
                           <div className="timeline-badge-group right-align">
                             <div className="timeline-connector-line"></div>
                             <div className="timeline-circle-badge teal-theme">
-                              <img src={asset('Images/avrs.jpg" alt="Aditya Vidyashram" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
+                              <img src={asset('/Images/avrs.jpg" alt="Aditya Vidyashram')} style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                             </div>
                             <span className="timeline-year">2022 - 2023</span>
                           </div>
@@ -790,7 +790,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2020 - 2021</span>
                             <div className="timeline-circle-badge blue-theme">
-                              <img src={asset('Images/avrs.jpg" alt="Aditya Vidyashram" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
+                              <img src={asset('/Images/avrs.jpg" alt="Aditya Vidyashram')} style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                             </div>
                             <div className="timeline-connector-line"></div>
                           </div>
@@ -831,7 +831,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src="/Icons/linkedin-learning.svg" alt="LinkedIn Learning" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/linkedin-learning.svg')} alt="LinkedIn Learning" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Power BI: Dashboards for Beginners</h3>
                             <p className="cert-card-issuer">LinkedIn Learning (2026)</p>
@@ -857,7 +857,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src="/Icons/Python icon.png" alt="FITA Academy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/Python icon.png')} alt="FITA Academy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Data Analytics (Python, SQL, Power BI)</h3>
                             <p className="cert-card-issuer">FITA Academy</p>
@@ -883,7 +883,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src="/Icons/Gemini icon.svg" alt="SAWIT.AI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/Gemini icon.svg')} alt="SAWIT.AI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Fundamentals of Generative AI</h3>
                             <p className="cert-card-issuer">SAWIT.AI Learnathon (GUVI, AICTE)</p>
@@ -909,7 +909,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src="/Icons/nptel.svg" alt="NPTEL" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/nptel.svg')} alt="NPTEL" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Programming, Data Structures & Algorithms</h3>
                             <p className="cert-card-issuer">NPTEL</p>
@@ -935,7 +935,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src="/Icons/guvi.svg" alt="GUVI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/guvi.svg')} alt="GUVI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Python Programming</h3>
                             <p className="cert-card-issuer">GUVI (HCL Group)</p>
@@ -999,7 +999,7 @@ function App() {
                             <div className="timeline-badge-group right-align">
                               <div className="timeline-connector-line"></div>
                               <div className="timeline-circle-badge orange-theme">
-                                <img src={asset('Images/iisc.png" alt="IISc" style={{ width: '100 % ', height: '100 % ', objectFit: 'contain' }} />
+                                <img src={asset('/Images/iisc.png" alt="IISc')} style={{ width: '100 % ', height: '100 % ', objectFit: 'contain' }} />
                               </div>
                               <span className="timeline-year">June 2026 – July 2026</span>
                             </div>
@@ -1019,7 +1019,7 @@ function App() {
                             <div className="timeline-badge-group left-align">
                               <span className="timeline-year">2025 | Remote</span>
                               <div className="timeline-circle-badge teal-theme">
-                                <img src={asset('Images/forage.jpg" alt="Deloitte" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
+                                <img src={asset('/Images/forage.jpg" alt="Deloitte')} style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                               </div>
                               <div className="timeline-connector-line"></div>
                             </div>
@@ -1063,7 +1063,7 @@ function App() {
                             <div className="timeline-badge-group right-align">
                               <div className="timeline-connector-line"></div>
                               <div className="timeline-circle-badge blue-theme">
-                                <img src={asset('Images/aravind.jpg" alt="Aravind Eye Hospital" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
+                                <img src={asset('/Images/aravind.jpg" alt="Aravind Eye Hospital')} style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                               </div>
                               <span className="timeline-year">Puducherry, India</span>
                             </div>
@@ -1674,10 +1674,10 @@ function App() {
 
                   <div className="animate-fade-in-up" style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: 0, zIndex: 10 }}>
                     <img
-                      src={asset('Images/home.png"
-                      alt = "Ranjana Devi K"
-                      className = "centered-image"
-                      style = {{
+                      src={asset('/Images/home.png')}
+                      alt="Ranjana Devi K"
+                      className="centered-image"
+                      style={{
                         opacity: homeImageOpacity,
                         transform: `scale(${homeImageScale}) translateY(${homeImageTranslateY}px)`,
                         transformOrigin: 'bottom center',
@@ -1735,7 +1735,7 @@ function App() {
 
                   {/* CENTER COLUMN (Portrait) */}
                   <div className="about-image-center">
-                    <img src={asset('Images/about.png" alt="Ranjana Devi K" className="about-portrait-bw" />
+                    <img src={asset('/Images/about.png" alt="Ranjana Devi K" className="about-portrait-bw')} />
                   </div>
 
                   {/* RIGHT COLUMN */}
