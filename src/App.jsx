@@ -1,11 +1,13 @@
 import { useState, useEffect, useRef } from 'react'
-import { 
-  Briefcase, Download, Github, Linkedin, Mail, MapPin, Brain, Code, 
-  BarChart, Users, Folder, Trophy, GraduationCap, ExternalLink, Sparkles, 
+import {
+  Briefcase, Download, Github, Linkedin, Mail, MapPin, Brain, Code,
+  BarChart, Users, Folder, Trophy, GraduationCap, ExternalLink, Sparkles,
   Database, FileText, CheckCircle2, Award, Terminal, Search, ArrowRight,
   TrendingUp, Layers, Check, Phone, Globe
 } from 'lucide-react'
 import './index.css'
+
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -310,18 +312,18 @@ function App() {
 
   // --- HOME CINEMATIC MATH ---
   const homeProgress = Math.min(1, homeScrollTop / 1000)
-  
+
   const homeImageScale = 1 - (0.5 * homeProgress)
   const homeImageTranslateY = homeProgress * 500
   const homeImageOpacity = Math.max(0, 1 - (homeProgress * 1.2))
   const homeTickerScale = 1 + (homeProgress * 15)
-  
+
   const fadeOutProgress = Math.max(0, Math.min(1, (homeScrollTop - 800) / 300))
   const homeMainOpacity = 1 - fadeOutProgress
   const aboutImageOpacity = fadeOutProgress
-  
+
   const aboutBoxOpacity = Math.max(0, Math.min(1, (homeScrollTop - 1100) / 300))
-  
+
   const stagger1 = Math.max(0, Math.min(1, (aboutBoxOpacity - 0.0) * 2))
   const stagger2 = Math.max(0, Math.min(1, (aboutBoxOpacity - 0.2) * 2))
   const stagger3 = Math.max(0, Math.min(1, (aboutBoxOpacity - 0.4) * 2))
@@ -452,13 +454,13 @@ function App() {
       </header>
 
       {/* Global Fixed Vertical Social Links */}
-      <div 
+      <div
         className={`vertical-social-sidebar left-social ${activeTab !== 'Home' ? 'hidden' : ''}`}
         style={{ opacity: activeTab === 'Home' ? homeImageOpacity : 0, transition: 'opacity 0.2s ease-out' }}
       >
         <a href="https://github.com/ranjanadevi1802" target="_blank" rel="noopener noreferrer">GITHUB</a>
       </div>
-      <div 
+      <div
         className={`vertical-social-sidebar right-social ${activeTab !== 'Home' ? 'hidden' : ''}`}
         style={{ opacity: activeTab === 'Home' ? homeImageOpacity : 0, transition: 'opacity 0.2s ease-out' }}
       >
@@ -503,9 +505,9 @@ function App() {
                   driving modern Data Science & AI.
                 </div>
 
-                <div 
-                  className="scroll-indicator" 
-                  style={{ cursor: 'pointer', pointerEvents: 'auto' }} 
+                <div
+                  className="scroll-indicator"
+                  style={{ cursor: 'pointer', pointerEvents: 'auto' }}
                   onClick={() => {
                     const container = document.querySelector('.skills-view')
                     if (container) container.scrollTo({ top: 250, behavior: 'smooth' })
@@ -698,14 +700,14 @@ function App() {
                       pointerEvents: edOpacity === 0 ? 'none' : 'auto'
                     }}
                   >
-                    <div 
+                    <div
                       className="journey-minimal-content"
                       style={{
                         transform: `translateY(${timelineTranslateY}px)`,
                         transition: 'transform 0.1s ease-out'
                       }}
                     >
-                      <h2 
+                      <h2
                         className="journey-title-minimal"
                         style={{
                           opacity: edHeaderOpacity,
@@ -716,7 +718,7 @@ function App() {
                         Educational Qualification
                       </h2>
                       <div className="journey-timeline-map">
-                        <div 
+                        <div
                           className="journey-timeline-line"
                           style={{
                             opacity: edLineOpacity,
@@ -725,7 +727,7 @@ function App() {
                         ></div>
 
                         {/* College */}
-                        <div 
+                        <div
                           className="journey-timeline-grid"
                           style={{
                             opacity: edItem1Opacity,
@@ -751,7 +753,7 @@ function App() {
                         </div>
 
                         {/* 12th Grade */}
-                        <div 
+                        <div
                           className="journey-timeline-grid alternate"
                           style={{
                             opacity: edItem2Opacity,
@@ -777,7 +779,7 @@ function App() {
                         </div>
 
                         {/* 10th Grade */}
-                        <div 
+                        <div
                           className="journey-timeline-grid"
                           style={{
                             opacity: edItem3Opacity,
@@ -805,7 +807,7 @@ function App() {
 
                       {/* Certifications Section */}
                       <div className="journey-certifications">
-                        <h2 
+                        <h2
                           className="journey-title-minimal"
                           style={{
                             opacity: certHeaderOpacity,
@@ -816,10 +818,10 @@ function App() {
                         >
                           Certifications
                         </h2>
-                        
+
                         <div className="cert-cards-container">
                           {/* Card 1 */}
-                          <div 
+                          <div
                             className="cert-card"
                             style={{
                               opacity: certCard1Opacity,
@@ -834,18 +836,18 @@ function App() {
                             <h3 className="cert-card-title">Power BI: Dashboards for Beginners</h3>
                             <p className="cert-card-issuer">LinkedIn Learning (2026)</p>
                             <p className="cert-card-desc">Mastered dynamic business intelligence reporting, data modeling, custom DAX measures, and cross-filtering analytical dashboard views.</p>
-                            <a 
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" 
-                              target="_blank" 
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
                             >
                               Show credentials
                             </a>
                           </div>
-                          
+
                           {/* Card 2 */}
-                          <div 
+                          <div
                             className="cert-card"
                             style={{
                               opacity: certCard2Opacity,
@@ -860,18 +862,18 @@ function App() {
                             <h3 className="cert-card-title">Data Analytics (Python, SQL, Power BI)</h3>
                             <p className="cert-card-issuer">FITA Academy</p>
                             <p className="cert-card-desc">Comprehensive certification in relational SQL database management, Python exploratory data analysis (Pandas & NumPy), and Power BI reporting.</p>
-                            <a 
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" 
-                              target="_blank" 
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
                             >
                               Show credentials
                             </a>
                           </div>
-                          
+
                           {/* Card 3 */}
-                          <div 
+                          <div
                             className="cert-card"
                             style={{
                               opacity: certCard3Opacity,
@@ -886,18 +888,18 @@ function App() {
                             <h3 className="cert-card-title">Fundamentals of Generative AI</h3>
                             <p className="cert-card-issuer">SAWIT.AI Learnathon (GUVI, AICTE)</p>
                             <p className="cert-card-desc">Gained foundational mastery of LLM architectures, generative AI paradigms, prompt design, and practical AI workflow development.</p>
-                            <a 
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" 
-                              target="_blank" 
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
                             >
                               Show credentials
                             </a>
                           </div>
-                          
+
                           {/* Card 4 */}
-                          <div 
+                          <div
                             className="cert-card"
                             style={{
                               opacity: certCard4Opacity,
@@ -912,9 +914,9 @@ function App() {
                             <h3 className="cert-card-title">Programming, Data Structures & Algorithms</h3>
                             <p className="cert-card-issuer">NPTEL</p>
                             <p className="cert-card-desc">Rigorous academic curriculum covering algorithmic complexity, sorting, searching, recursion, and core data structure implementations using Python.</p>
-                            <a 
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" 
-                              target="_blank" 
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
                             >
@@ -923,7 +925,7 @@ function App() {
                           </div>
 
                           {/* Card 5 */}
-                          <div 
+                          <div
                             className="cert-card"
                             style={{
                               opacity: certCard5Opacity,
@@ -938,9 +940,9 @@ function App() {
                             <h3 className="cert-card-title">Python Programming</h3>
                             <p className="cert-card-issuer">GUVI (HCL Group)</p>
                             <p className="cert-card-desc">Demonstrated core and advanced Python proficiency, object-oriented concepts, and computational problem solving.</p>
-                            <a 
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" 
-                              target="_blank" 
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
                             >
@@ -952,7 +954,7 @@ function App() {
 
                       {/* Experience Section */}
                       <div className="journey-experience" style={{ marginTop: '100px', paddingBottom: '100px', width: '100%' }}>
-                        <h2 
+                        <h2
                           className="journey-title-minimal"
                           style={{
                             opacity: expHeaderOpacity,
@@ -964,12 +966,12 @@ function App() {
                         >
                           Experience & Internships
                         </h2>
-                        
+
                         <div className="journey-timeline-map" style={{ marginTop: '60px' }}>
                           <div className="journey-timeline-line" style={{ opacity: expHeaderOpacity }}></div>
-                          
+
                           {/* Experience Item 1: IISc */}
-                          <div 
+                          <div
                             className="journey-timeline-grid"
                             style={{
                               opacity: expItem1Opacity,
@@ -1004,7 +1006,7 @@ function App() {
                           </div>
 
                           {/* Experience Item 2: Deloitte */}
-                          <div 
+                          <div
                             className="journey-timeline-grid alternate"
                             style={{
                               opacity: expItem2Opacity,
@@ -1036,7 +1038,7 @@ function App() {
                           </div>
 
                           {/* Experience Item 3: Aravind Eye Hospital */}
-                          <div 
+                          <div
                             className="journey-timeline-grid"
                             style={{
                               opacity: expItem3Opacity,
@@ -1070,7 +1072,7 @@ function App() {
                       </div>
 
                       {/* 3. JOURNEY ENDING FOOTER */}
-                      <div 
+                      <div
                         className="journey-footer"
                         style={{
                           opacity: journeyFooterOpacity,
@@ -1083,14 +1085,14 @@ function App() {
                           <p className="footer-subtitle">THAT'S ALL FOR NOW.</p>
                           <h2 className="footer-title">Got an opportunity in mind?<br />Let's talk</h2>
                         </div>
-        
+
                         <div className="footer-divider-container">
                           <div className="footer-divider-line"></div>
                           <button className="footer-get-in-touch-btn" onClick={() => handleNavClick('Contact')}>
                             Get in touch
                           </button>
                         </div>
-        
+
                         <div className="footer-bottom">
                           <div className="footer-contact-item">
                             <span className="footer-contact-label">EMAIL</span>
@@ -1156,9 +1158,9 @@ function App() {
                     </div>
                   </div>
                   <div className="project-actions-row">
-                    <a 
-                      href="https://github.com/ranjanadevi1802/CreditCard-Fraud-Detection" 
-                      target="_blank" 
+                    <a
+                      href="https://github.com/ranjanadevi1802/CreditCard-Fraud-Detection"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="project-btn-primary"
                     >
@@ -1201,9 +1203,9 @@ function App() {
                     </div>
                   </div>
                   <div className="project-actions-row">
-                    <a 
-                      href="https://github.com/ranjanadevi1802/AgroChain" 
-                      target="_blank" 
+                    <a
+                      href="https://github.com/ranjanadevi1802/AgroChain"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="project-btn-primary"
                     >
@@ -1246,9 +1248,9 @@ function App() {
                     </div>
                   </div>
                   <div className="project-actions-row">
-                    <a 
-                      href="https://github.com/ranjanadevi1802/support-ticket-search" 
-                      target="_blank" 
+                    <a
+                      href="https://github.com/ranjanadevi1802/support-ticket-search"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="project-btn-primary"
                     >
@@ -1266,26 +1268,26 @@ function App() {
                   <p>Ranjana Devi K • B.Tech Information Science Engineering (9.12 CGPA)</p>
                 </div>
                 <div className="resume-action-btns">
-                  <a 
-                    href="/RanjanaDevi_Resume.pdf" 
+                  <a
+                    href="/RanjanaDevi_Resume.pdf"
                     download="RanjanaDevi_Resume.pdf"
-                    target="_blank" 
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="resume-download-btn"
                   >
                     <Download size={18} /> Download Resume
                   </a>
-                  <a 
-                    href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="resume-outline-btn"
                   >
                     <Linkedin size={18} /> LinkedIn Profile
                   </a>
-                  <a 
-                    href="https://leetcode.com/u/Ranjana_18/" 
-                    target="_blank" 
+                  <a
+                    href="https://leetcode.com/u/Ranjana_18/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="resume-outline-btn"
                   >
@@ -1620,7 +1622,7 @@ function App() {
           ) : (
             <div className="home-scroll-track" onScroll={(e) => setHomeScrollTop(e.target.scrollTop)}>
               <div className="home-sticky-viewport">
-                
+
                 {/* The Cinematic Container */}
                 <div className="center-container" style={{ opacity: homeMainOpacity, transition: 'opacity 0.2s ease-out' }}>
                   <div className="background-ticker-container" style={{ transform: `scale(${homeTickerScale})`, transformOrigin: 'center center', marginTop: '-12vh', transition: 'transform 0.2s ease-out' }}>
@@ -1671,13 +1673,13 @@ function App() {
                   </div>
 
                   <div className="animate-fade-in-up" style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: 0, zIndex: 10 }}>
-                    <img 
-                      src="/Images/home.png" 
-                      alt="Ranjana Devi K" 
-                      className="centered-image" 
-                      style={{ 
+                    <img
+                      src="/Images/home.png"
+                      alt="Ranjana Devi K"
+                      className="centered-image"
+                      style={{
                         opacity: homeImageOpacity,
-                        transform: `scale(${homeImageScale}) translateY(${homeImageTranslateY}px)`, 
+                        transform: `scale(${homeImageScale}) translateY(${homeImageTranslateY}px)`,
                         transformOrigin: 'bottom center',
                         transition: 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
                       }}
@@ -1686,7 +1688,7 @@ function App() {
                 </div>
 
                 {/* The About Canvas (3-Column Layout) */}
-                <div 
+                <div
                   className="about-split-layout"
                   style={{
                     opacity: aboutImageOpacity,
@@ -1700,37 +1702,37 @@ function App() {
                     <div className="about-section-label" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
                       ABOUT ME <span className="label-line"></span>
                     </div>
-                    
-                    <h1 className="about-name-title" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>Ranjana<br/>Devi K</h1>
-                    
+
+                    <h1 className="about-name-title" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>Ranjana<br />Devi K</h1>
+
                     <h3 className="about-subtitle" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>AI Engineer • Data Analytics Specialist • ML Researcher</h3>
-                    
+
                     <p className="about-description" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
                       Data Analytics & AI Engineering student with a 9.12 CGPA, hands-on experience in statistical modeling and machine learning workflows, and a track record of building end-to-end data-driven solutions. Experienced in deploying predictive systems with Google Gemini, Vertex AI, custom vector search engines, and exploratory data analysis.
                     </p>
-                    
+
                     <div className="about-action-row" style={{ opacity: stagger3, transform: `translateY(${20 * (1 - stagger3)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
                       <button className="btn-dark" onClick={() => handleNavClick('Project')}>
                         <Briefcase size={18} /> View Projects
                       </button>
                     </div>
-                    
+
                     <div className="about-divider" style={{ opacity: stagger3, transition: 'opacity 0.2s' }}></div>
-                    
+
                     <div className="about-connect-label" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>Connect with me</div>
-                    
+
                     <div className="about-social-row" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
                       <a href="https://github.com/ranjanadevi1802" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="GitHub"><Github size={20} /></a>
                       <a href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="LinkedIn"><Linkedin size={20} /></a>
                       <a href="https://leetcode.com/u/Ranjana_18/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="LeetCode"><Code size={20} /></a>
                       <a href="mailto:ranjanadevi.180264@gmail.com" className="social-icon-btn" title="Email"><Mail size={20} /></a>
-                      
+
                       <div className="status-pill">
                         <span className="status-dot"></span> Available for Internship
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* CENTER COLUMN (Portrait) */}
                   <div className="about-image-center">
                     <img src="/Images/about.png" alt="Ranjana Devi K" className="about-portrait-bw" />
