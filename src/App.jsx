@@ -361,7 +361,7 @@ function App() {
           {/* Logo (Center on Desktop) */}
           <div className="nav-logo">
             <div className="logo-circle">
-              <img src="/Images/rd logo.png" alt="RD Logo" className="logo-img" />
+              <img src={asset('Images/rd logo.png" alt="RD Logo" className="logo-img" />
             </div>
             <span className="logo-text">
               <span className="logo-short">RANJANA</span>
@@ -607,7 +607,7 @@ function App() {
                   {/* 8. Scientific & Numerical Research */}
                   <div className="skill-card" style={{ animationDelay: '0.42s' }}>
                     <div className="card-icons">
-                      <img src="/Images/iisc.png" alt="IISc" style={{ borderRadius: '50%', objectFit: 'contain' }} />
+                      <img src={asset('Images/iisc.png" alt="IISc" style={{ borderRadius: '50 % ', objectFit: 'contain' }} />
                     </div>
                     <h3 className="card-title">Scientific & Numerical Research</h3>
                     <p className="card-desc">Algorithm simulations in Python for Numerical Analysis (Newton's method, piecewise interpolation) and QSAR predictive modeling (IISc).</p>
@@ -738,7 +738,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2023 - Present (Exp. 2027)</span>
                             <div className="timeline-circle-badge orange-theme">
-                              <img src="/Images/wec.jpg" alt="Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                              <img src={asset('Images/wec.jpg" alt="Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
                             </div>
                             <div className="timeline-connector-line"></div>
                           </div>
@@ -772,7 +772,7 @@ function App() {
                           <div className="timeline-badge-group right-align">
                             <div className="timeline-connector-line"></div>
                             <div className="timeline-circle-badge teal-theme">
-                              <img src="/Images/avrs.jpg" alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                              <img src={asset('Images/avrs.jpg" alt="Aditya Vidyashram" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                             </div>
                             <span className="timeline-year">2022 - 2023</span>
                           </div>
@@ -790,7 +790,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2020 - 2021</span>
                             <div className="timeline-circle-badge blue-theme">
-                              <img src="/Images/avrs.jpg" alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                              <img src={asset('Images/avrs.jpg" alt="Aditya Vidyashram" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                             </div>
                             <div className="timeline-connector-line"></div>
                           </div>
@@ -999,7 +999,7 @@ function App() {
                             <div className="timeline-badge-group right-align">
                               <div className="timeline-connector-line"></div>
                               <div className="timeline-circle-badge orange-theme">
-                                <img src="/Images/iisc.png" alt="IISc" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                                <img src={asset('Images/iisc.png" alt="IISc" style={{ width: '100 % ', height: '100 % ', objectFit: 'contain' }} />
                               </div>
                               <span className="timeline-year">June 2026 – July 2026</span>
                             </div>
@@ -1019,7 +1019,7 @@ function App() {
                             <div className="timeline-badge-group left-align">
                               <span className="timeline-year">2025 | Remote</span>
                               <div className="timeline-circle-badge teal-theme">
-                                <img src="/Images/forage.jpg" alt="Deloitte" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                                <img src={asset('Images/forage.jpg" alt="Deloitte" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                               </div>
                               <div className="timeline-connector-line"></div>
                             </div>
@@ -1063,7 +1063,7 @@ function App() {
                             <div className="timeline-badge-group right-align">
                               <div className="timeline-connector-line"></div>
                               <div className="timeline-circle-badge blue-theme">
-                                <img src="/Images/aravind.jpg" alt="Aravind Eye Hospital" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                                <img src={asset('Images/aravind.jpg" alt="Aravind Eye Hospital" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                               </div>
                               <span className="timeline-year">Puducherry, India</span>
                             </div>
@@ -1674,10 +1674,10 @@ function App() {
 
                   <div className="animate-fade-in-up" style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: 0, zIndex: 10 }}>
                     <img
-                      src="/Images/home.png"
-                      alt="Ranjana Devi K"
-                      className="centered-image"
-                      style={{
+                      src={asset('Images/home.png"
+                      alt = "Ranjana Devi K"
+                      className = "centered-image"
+                      style = {{
                         opacity: homeImageOpacity,
                         transform: `scale(${homeImageScale}) translateY(${homeImageTranslateY}px)`,
                         transformOrigin: 'bottom center',
@@ -1735,7 +1735,7 @@ function App() {
 
                   {/* CENTER COLUMN (Portrait) */}
                   <div className="about-image-center">
-                    <img src="/Images/about.png" alt="Ranjana Devi K" className="about-portrait-bw" />
+                    <img src={asset('Images/about.png" alt="Ranjana Devi K" className="about-portrait-bw" />
                   </div>
 
                   {/* RIGHT COLUMN */}
