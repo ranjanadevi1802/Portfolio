@@ -1273,7 +1273,7 @@ function App() {
                 </div>
                 <div className="resume-action-btns">
                   <a
-                    href="/RanjanaDevi_Resume.pdf"
+                    href={asset('/RanjanaDevi_Resume.pdf')}
                     download="RanjanaDevi_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
