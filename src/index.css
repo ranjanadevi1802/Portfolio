@@ -3546,151 +3546,243 @@ body {
   }
 }
 
-/* ================================
-   MOBILE RESPONSIVE
-   ================================ */
+/* =========================================================
+   FINAL MOBILE FIX — ABOUT / HOME
+   ========================================================= */
 
 @media (max-width: 768px) {
 
-  /* Prevent horizontal scrolling */
-  html,
-  body {
+  /* ---------- ABOUT MAIN CONTAINER ---------- */
+
+  .about-split-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
     overflow-x: hidden;
+    padding-top: 105px;
+    padding-bottom: 50px;
   }
 
-  #root {
-    width: 100%;
-    overflow-x: hidden;
-  }
 
-  /* Navigation */
-  .capsule-nav-container {
-    width: calc(100% - 24px);
-    max-width: none;
-  }
+  /* ---------- ABOUT LEFT CONTENT ---------- */
 
-  .capsule-nav {
-    width: 100%;
-  }
+  .about-content-left {
+    width: 100% !important;
+    max-width: 100% !important;
 
-  /* General sections */
-  section {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
+    padding: 25px 24px 20px 24px !important;
 
-  /* Timeline */
-  .timeline {
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .timeline::before {
-    left: 20px;
-    transform: none;
-  }
-
-  .timeline-item {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 50px;
-    padding-right: 0;
-    box-sizing: border-box;
-  }
-
-  .timeline-item.left,
-  .timeline-item.right {
-    width: 100%;
-    left: 0;
-    right: auto;
     text-align: left;
-  }
 
-  .timeline-content {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    text-align: left;
-  }
-
-  .timeline-circle-badge {
-    width: 58px;
-    height: 58px;
-    min-width: 58px;
-    overflow: hidden;
-  }
-
-  /* Timeline connectors */
-  .timeline-connector-line {
-    display: none;
-  }
-
-  /* Education / Experience text */
-  .timeline-year {
-    font-size: 1.2rem;
-    line-height: 1.3;
-  }
-
-  .timeline-content h3 {
-    font-size: 1.25rem;
-    line-height: 1.3;
-  }
-
-  .timeline-content p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  /* Timeline logos */
-  .timeline-circle-badge img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  /* Skills grid */
-  .skills-grid {
-    grid-template-columns: 1fr !important;
-    width: 100%;
-    padding: 0 16px;
     box-sizing: border-box;
   }
 
-  .skill-card {
+
+  /* ABOUT LABEL */
+
+  .about-section-label {
     width: 100%;
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+
+    margin-bottom: 28px;
   }
 
-  .card-icons {
+  .about-section-label .label-line {
+    width: 35px;
+    margin-left: 12px;
+  }
+
+
+  /* ---------- NAME ---------- */
+
+  .about-name-title {
+    width: 100%;
+
+    font-size: clamp(3rem, 13vw, 4rem) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -2px !important;
+
+    margin-bottom: 24px !important;
+
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+
+  /* ---------- SUBTITLE ---------- */
+
+  .about-subtitle {
+    width: 100%;
+
+    font-size: 1rem !important;
+    line-height: 1.45;
+
+    margin-bottom: 20px !important;
+  }
+
+
+  /* ---------- DESCRIPTION ---------- */
+
+  .about-description {
+    width: 100%;
+    max-width: 100% !important;
+
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+
+    margin-bottom: 25px !important;
+
+    color: #555;
+  }
+
+
+  /* ---------- BUTTONS ---------- */
+
+  .about-action-row {
+    width: 100%;
+    max-width: 100% !important;
+
+    display: flex;
+    flex-direction: row !important;
     flex-wrap: wrap;
-    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
   }
 
-  /* About section */
-  .about-image-center {
+  .about-action-row button,
+  .about-action-row a {
+    flex: 1 1 auto;
+    min-width: 130px;
+  }
+
+
+  /* ---------- DIVIDER ---------- */
+
+  .about-divider {
     width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
+    max-width: 100% !important;
+
+    margin-bottom: 20px;
   }
 
-  /* Images */
-  img {
-    max-width: 100%;
+
+  /* ---------- SOCIAL ---------- */
+
+  .about-social-row {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
   }
 
-  /* Buttons */
-  button,
-  .project-btn-primary,
-  .project-btn-secondary {
-    max-width: 100%;
+  .status-pill {
+    margin-left: 10px !important;
+    margin-top: 0 !important;
+  }
+
+
+  /* ---------- PORTRAIT ---------- */
+
+  .about-image-center {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: 55vh !important;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    margin: 0;
+  }
+
+  .about-portrait-bw {
+    height: 100% !important;
+    width: auto !important;
+    max-width: 90vw !important;
+
+    object-fit: contain;
+  }
+
+
+  /* ---------- RIGHT COLUMN ---------- */
+
+  .about-content-right {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    padding: 30px 24px 50px 24px !important;
+
     box-sizing: border-box;
+  }
+
+  .what-i-do-stack {
+    width: 100%;
+  }
+
+  .glance-grid {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .about-split-layout {
+    padding-top: 95px;
+  }
+
+  .about-content-left {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .about-name-title {
+    font-size: 3.15rem !important;
+    line-height: 0.98 !important;
+  }
+
+  .about-description {
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .about-action-row {
+    flex-direction: column !important;
+  }
+
+  .about-action-row button,
+  .about-action-row a {
+    width: 100%;
+  }
+
+  .about-image-center {
+    height: 48vh !important;
+  }
+
+  .about-content-right {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }

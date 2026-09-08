@@ -744,7 +744,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2023 - Present (Exp. 2027)</span>
                             <div className="timeline-circle-badge orange-theme">
-                              <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '150%', height: '150%', objectFit: 'contain', borderRadius: '50%' }} />                            </div>
+                              <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '60%' }} />                            </div>
                             <div className="timeline-connector-line"></div>
                           </div>
                           <div className="timeline-center-node orange-theme">
@@ -1512,7 +1512,7 @@ function App() {
                                 Accept: "application/json",
                               },
                               body: JSON.stringify({
-                                access_key: "f70dde7f-73c2-4b1d-a8a6-dda22bc21ca8",
+                                access_key: "e0dec84b-4cf2-402f-b3d1-4cedc5c280e2",
                                 name: contactName,
                                 email: contactEmail,
                                 subject: contactSubject,
