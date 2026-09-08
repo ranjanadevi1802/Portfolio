@@ -590,7 +590,22 @@ function App() {
                     <p className="card-desc">Building machine learning workflows with scikit-learn, statistical modeling, and integrating Google Gemini and Vertex AI for intelligent systems.</p>
                   </div>
 
-                  {/* 7. Computer Science Foundations */}
+                  {/* 7. UI/UX Design */}
+                  <div className="skill-card" style={{ animationDelay: '0.42s' }}>
+                    <div className="card-icons">
+                      <img src={asset('/Icons/figma icon.png')} alt="Figma" />
+                      <img src={asset('/Icons/stitch icon.svg')} alt="Google Stitch" />
+                      <img src={asset('/Icons/photoshop icon')} alt="Adobe Photoshop" />                      <img src={asset('/Icons/illustrator icon.jpg')} alt="Adobe Illustrator" />
+                      <img src={asset('/Icons/canva icon.svg')} alt="Canva" />
+                    </div>
+                    <h3 className="card-title">UI/UX Design</h3>
+                    <p className="card-desc">
+                      Designing user-centered interfaces, wireframes, interactive prototypes,
+                      and visual experiences using Figma, Stitch, Photoshop, Illustrator, and Canva.
+                    </p>
+                  </div>
+
+                  {/* 8. Computer Science Foundations */}
                   <div className="skill-card" style={{ animationDelay: '0.36s' }}>
                     <div className="card-tags">
                       <span className="card-tag">Data Structures</span>
@@ -602,15 +617,6 @@ function App() {
                     </div>
                     <h3 className="card-title">Computer Science Foundations</h3>
                     <p className="card-desc">Rigorous foundation in algorithm design, object-oriented principles, and systems engineering.</p>
-                  </div>
-
-                  {/* 8. Scientific & Numerical Research */}
-                  <div className="skill-card" style={{ animationDelay: '0.42s' }}>
-                    <div className="card-icons">
-                      <img src={asset('/Images/iisc.png" alt="IISc')} style={{ borderRadius: '50 % ', objectFit: 'contain' }} />
-                    </div>
-                    <h3 className="card-title">Scientific & Numerical Research</h3>
-                    <p className="card-desc">Algorithm simulations in Python for Numerical Analysis (Newton's method, piecewise interpolation) and QSAR predictive modeling (IISc).</p>
                   </div>
 
                   {/* 9. Leadership & Community */}
@@ -738,11 +744,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2023 - Present (Exp. 2027)</span>
                             <div className="timeline-circle-badge orange-theme">
-                              <img
-                                src={asset('/Images/wec.jpg')}
-                                alt="Women's Engineering College"
-                                style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
-                              />
+                              <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '100%', height: '100%', aspectRatio: '1 / 1', objectFit: 'cover', borderRadius: '50%' }} />
                             </div>
                             <div className="timeline-connector-line"></div>
                           </div>
@@ -776,7 +778,7 @@ function App() {
                           <div className="timeline-badge-group right-align">
                             <div className="timeline-connector-line"></div>
                             <div className="timeline-circle-badge teal-theme">
-                              <img src={asset('/Images/avrs.jpg" alt="Aditya Vidyashram')} style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
+                              <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
                             </div>
                             <span className="timeline-year">2022 - 2023</span>
                           </div>
@@ -794,8 +796,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2020 - 2021</span>
                             <div className="timeline-circle-badge blue-theme">
-                              <img src={asset('/Images/avrs.jpg" alt="Aditya Vidyashram')} style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
-                            </div>
+                              <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                            </div>
                             <div className="timeline-connector-line"></div>
                           </div>
                           <div className="timeline-center-node blue-theme">
@@ -1003,8 +1004,7 @@ function App() {
                             <div className="timeline-badge-group right-align">
                               <div className="timeline-connector-line"></div>
                               <div className="timeline-circle-badge orange-theme">
-                                <img src={asset('/Images/iisc.png" alt="IISc')} style={{ width: '100 % ', height: '100 % ', objectFit: 'contain' }} />
-                              </div>
+                                <img src={asset('/Images/iisc.png')} alt="IISc" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />                              </div>
                               <span className="timeline-year">June 2026 – July 2026</span>
                             </div>
                           </div>
@@ -1023,8 +1023,7 @@ function App() {
                             <div className="timeline-badge-group left-align">
                               <span className="timeline-year">2025 | Remote</span>
                               <div className="timeline-circle-badge teal-theme">
-                                <img src={asset('/Images/forage.jpg" alt="Deloitte')} style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
-                              </div>
+                                <img src={asset('/Images/forage.jpg')} alt="Deloitte" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                              </div>
                               <div className="timeline-connector-line"></div>
                             </div>
                             <div className="timeline-center-node teal-theme">
@@ -1067,7 +1066,7 @@ function App() {
                             <div className="timeline-badge-group right-align">
                               <div className="timeline-connector-line"></div>
                               <div className="timeline-circle-badge blue-theme">
-                                <img src={asset('/Images/aravind.jpg" alt="Aravind Eye Hospital')} style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
+                                <img src={asset('/Images/aravind.jpg')} alt="Aravind Eye Hospital" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
                               </div>
                               <span className="timeline-year">Puducherry, India</span>
                             </div>
@@ -1739,7 +1738,11 @@ function App() {
 
                   {/* CENTER COLUMN (Portrait) */}
                   <div className="about-image-center">
-                    <img src={asset('/Images/about.png" alt="Ranjana Devi K" className="about-portrait-bw')} />
+                    <img
+                      src={asset('/Images/about.png')}
+                      alt="Ranjana Devi K"
+                      className="about-portrait-bw"
+                    />
                   </div>
 
                   {/* RIGHT COLUMN */}
