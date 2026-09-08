@@ -744,7 +744,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2023 - Present (Exp. 2027)</span>
                             <div className="timeline-circle-badge orange-theme">
-                              <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />                            </div>
+                              <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '150%', height: '150%', objectFit: 'contain', borderRadius: '50%' }} />                            </div>
                             <div className="timeline-connector-line"></div>
                           </div>
                           <div className="timeline-center-node orange-theme">
