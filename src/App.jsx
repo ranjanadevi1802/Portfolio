@@ -594,8 +594,8 @@ function App() {
                   <div className="skill-card" style={{ animationDelay: '0.42s' }}>
                     <div className="card-icons">
                       <img src={asset('/Icons/figma icon.png')} alt="Figma" />
-                      <img src={asset('/Icons/stitch icon.svg')} alt="Google Stitch" />
-                      <img src={asset('/Icons/photoshop icon')} alt="Adobe Photoshop" />                      <img src={asset('/Icons/illustrator icon.jpg')} alt="Adobe Illustrator" />
+                      <img src={asset('/Icons/illustrator icon.jpg')} alt="Adobe Illustrator" />
+                      <img src={asset('/Icons/photoshop icon')} alt="Adobe Photoshop" />
                       <img src={asset('/Icons/canva icon.svg')} alt="Canva" />
                     </div>
                     <h3 className="card-title">UI/UX Design</h3>
@@ -744,8 +744,7 @@ function App() {
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2023 - Present (Exp. 2027)</span>
                             <div className="timeline-circle-badge orange-theme">
-                              <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '100%', height: '100%', aspectRatio: '1 / 1', objectFit: 'cover', borderRadius: '50%' }} />
-                            </div>
+                              <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />                            </div>
                             <div className="timeline-connector-line"></div>
                           </div>
                           <div className="timeline-center-node orange-theme">
@@ -1066,8 +1065,7 @@ function App() {
                             <div className="timeline-badge-group right-align">
                               <div className="timeline-connector-line"></div>
                               <div className="timeline-circle-badge blue-theme">
-                                <img src={asset('/Images/aravind.jpg')} alt="Aravind Eye Hospital" style={{ width: '100 % ', height: '100 % ', objectFit: 'cover', borderRadius: '50 % ' }} />
-                              </div>
+                                <img src={asset('/Images/aravind.jpg')} alt="Aravind Eye Hospital" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />                              </div>
                               <span className="timeline-year">Puducherry, India</span>
                             </div>
                           </div>
