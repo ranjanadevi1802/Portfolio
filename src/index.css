@@ -3546,13 +3546,11 @@ body {
   }
 }
 
-/* =========================================================
-   FINAL MOBILE FIX — ABOUT / HOME
-   ========================================================= */
+/* =========================================
+   MOBILE ABOUT HERO
+   ========================================= */
 
 @media (max-width: 768px) {
-
-  /* ---------- ABOUT MAIN CONTAINER ---------- */
 
   .about-split-layout {
     position: absolute;
@@ -3561,36 +3559,37 @@ body {
     width: 100%;
     min-height: 100%;
     height: auto;
+
     display: flex;
     flex-direction: column;
+
     overflow-y: auto;
     overflow-x: hidden;
-    padding-top: 105px;
-    padding-bottom: 50px;
+
+    padding-top: 95px;
+    padding-bottom: 40px;
   }
 
-
-  /* ---------- ABOUT LEFT CONTENT ---------- */
-
+  /* LEFT CONTENT */
   .about-content-left {
     width: 100% !important;
     max-width: 100% !important;
 
-    padding: 25px 24px 20px 24px !important;
+    padding: 25px 20px 20px !important;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     text-align: left;
 
-    box-sizing: border-box;
+    position: relative;
   }
 
-
-  /* ABOUT LABEL */
-
+  /* ABOUT ME */
   .about-section-label {
     width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -3598,7 +3597,7 @@ body {
     font-size: 0.72rem;
     letter-spacing: 3px;
 
-    margin-bottom: 28px;
+    margin-bottom: 25px;
   }
 
   .about-section-label .label-line {
@@ -3607,26 +3606,72 @@ body {
   }
 
 
-  /* ---------- NAME ---------- */
+  /* =========================================
+     NAME + CIRCULAR IMAGE HERO
+     ========================================= */
 
   .about-name-title {
-    width: 100%;
+    width: 58% !important;
 
-    font-size: clamp(3rem, 13vw, 4rem) !important;
-    line-height: 0.98 !important;
+    font-size: clamp(3rem, 12vw, 4rem) !important;
+    line-height: 0.96 !important;
+
     letter-spacing: -2px !important;
 
-    margin-bottom: 24px !important;
+    margin: 0 0 28px !important;
 
     word-break: normal;
     overflow-wrap: normal;
+
+    position: relative;
+    z-index: 3;
   }
 
 
-  /* ---------- SUBTITLE ---------- */
+  /* PORTRAIT */
+  .about-image-center {
+    position: absolute !important;
 
+    top: 78px;
+    right: 12px;
+
+    width: 150px !important;
+    height: 150px !important;
+
+    max-width: none !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+
+    margin: 0 !important;
+  }
+
+
+  .about-portrait-bw {
+    width: 150px !important;
+    height: 150px !important;
+
+    max-width: none !important;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    filter: grayscale(100%) contrast(1.08);
+
+    border: 3px solid #121212;
+
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.18);
+  }
+
+
+  /* SUBTITLE */
   .about-subtitle {
-    width: 100%;
+    width: 100% !important;
 
     font-size: 1rem !important;
     line-height: 1.45;
@@ -3635,30 +3680,25 @@ body {
   }
 
 
-  /* ---------- DESCRIPTION ---------- */
-
+  /* DESCRIPTION */
   .about-description {
-    width: 100%;
+    width: 100% !important;
     max-width: 100% !important;
 
-    font-size: 0.95rem !important;
-    line-height: 1.65 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
 
     margin-bottom: 25px !important;
-
-    color: #555;
   }
 
 
-  /* ---------- BUTTONS ---------- */
-
+  /* BUTTON */
   .about-action-row {
-    width: 100%;
+    width: 100% !important;
     max-width: 100% !important;
 
     display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap;
+    flex-direction: column !important;
 
     gap: 10px;
 
@@ -3667,28 +3707,27 @@ body {
 
   .about-action-row button,
   .about-action-row a {
-    flex: 1 1 auto;
-    min-width: 130px;
+    width: 100%;
   }
 
 
-  /* ---------- DIVIDER ---------- */
-
+  /* DIVIDER */
   .about-divider {
-    width: 100%;
+    width: 100% !important;
     max-width: 100% !important;
 
     margin-bottom: 20px;
   }
 
 
-  /* ---------- SOCIAL ---------- */
-
+  /* SOCIALS */
   .about-social-row {
     width: 100%;
 
     display: flex;
+
     justify-content: flex-start !important;
+
     flex-wrap: wrap;
   }
 
@@ -3698,91 +3737,50 @@ body {
   }
 
 
-  /* ---------- PORTRAIT ---------- */
-
-  .about-image-center {
-    width: 100% !important;
-    max-width: 100% !important;
-
-    height: 55vh !important;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    margin: 0;
-  }
-
-  .about-portrait-bw {
-    height: 100% !important;
-    width: auto !important;
-    max-width: 90vw !important;
-
-    object-fit: contain;
-  }
-
-
-  /* ---------- RIGHT COLUMN ---------- */
-
+  /* RIGHT CONTENT BELOW */
   .about-content-right {
     width: 100% !important;
     max-width: 100% !important;
 
-    padding: 30px 24px 50px 24px !important;
-
-    box-sizing: border-box;
-  }
-
-  .what-i-do-stack {
-    width: 100%;
-  }
-
-  .glance-grid {
-    width: 100%;
+    padding: 30px 20px 50px !important;
   }
 }
 
 
-/* =========================================================
-   SMALL PHONES
-   ========================================================= */
-
+/* SMALL PHONES */
 @media (max-width: 480px) {
 
   .about-split-layout {
-    padding-top: 95px;
+    padding-top: 90px;
   }
 
   .about-content-left {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
   }
 
   .about-name-title {
-    font-size: 3.15rem !important;
-    line-height: 0.98 !important;
-  }
+    width: 58% !important;
 
-  .about-description {
-    font-size: 0.92rem !important;
-    line-height: 1.6 !important;
-  }
-
-  .about-action-row {
-    flex-direction: column !important;
-  }
-
-  .about-action-row button,
-  .about-action-row a {
-    width: 100%;
+    font-size: 3.05rem !important;
+    line-height: 0.97 !important;
   }
 
   .about-image-center {
-    height: 48vh !important;
+    top: 78px;
+    right: 8px;
+
+    width: 135px !important;
+    height: 135px !important;
   }
 
-  .about-content-right {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+  .about-portrait-bw {
+    width: 135px !important;
+    height: 135px !important;
+  }
+
+  .about-description {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
   }
 }
