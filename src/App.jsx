@@ -593,10 +593,10 @@ function App() {
                   {/* 7. UI/UX Design */}
                   <div className="skill-card" style={{ animationDelay: '0.42s' }}>
                     <div className="card-icons">
-                      <img src={asset('/Icons/figma icon.png')} alt="Figma" />
+                      <img src={asset('/Icons/Figma icon.png')} alt="Figma" />
                       <img src={asset('/Icons/illustrator icon.jpg')} alt="Adobe Illustrator" />
                       <img src={asset('/Icons/photoshop icon')} alt="Adobe Photoshop" />
-                      <img src={asset('/Icons/canva icon.svg')} alt="Canva" />
+                      <img src={asset('/Icons/Canva icon.svg')} alt="Canva" />
                     </div>
                     <h3 className="card-title">UI/UX Design</h3>
                     <p className="card-desc">
