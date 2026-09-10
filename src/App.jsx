@@ -743,9 +743,7 @@ function App() {
                         >
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2023 - Present (Exp. 2027)</span>
-
-                            <div
-                              className="timeline-circle-badge orange-theme"
+                            <div className="timeline-circle-badge orange-theme"
                               style={{
                                 width: '80px',
                                 height: '80px',
@@ -755,389 +753,375 @@ function App() {
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center'
-                              }}
-                            >
-                              <img
-                                src={asset('/Images/wec.jpg')}
-                                alt="Women's Engineering College"
-                                style={{
-                                  width: '100%',
-                                  height: '100%',
-                                  objectFit: 'cover',
-                                  borderRadius: '50%'
-                                }}
-                              />
-                            </div>
-
+                              }}>
+                              <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '60%' }} />                            </div>
                             <div className="timeline-connector-line"></div>
-                          </div>
-                          <div className="timeline-connector-line"></div>
-                        </div>
-                        <div className="timeline-center-node orange-theme">
-                          <div className="timeline-dot-inner"></div>
-                        </div>
-                        <div className="timeline-text-content right-align">
-                          <h3 className="timeline-item-title">Bachelor of Technology in Information Science Engineering</h3>
-                          <p className="timeline-item-institution">Women's Engineering College, Puducherry</p>
-                          <p className="timeline-item-details">CGPA : 9.12 / 10.00 | Student Placement Coordinator</p>
-                        </div>
-                      </div>
-
-                      {/* 12th Grade */}
-                      <div
-                        className="journey-timeline-grid alternate"
-                        style={{
-                          opacity: edItem2Opacity,
-                          transform: `translateY(${edItem2Translate}px)`,
-                          transition: 'opacity 0.1s ease, transform 0.1s ease'
-                        }}
-                      >
-                        <div className="timeline-text-content left-align">
-                          <h3 className="timeline-item-title">Higher Secondary Education (Class XII - CBSE)</h3>
-                          <p className="timeline-item-institution">Aditya Vidyashram, Puducherry</p>
-                          <p className="timeline-item-details">Passed out Year: 2023 | Percentage : 81%</p>
-                        </div>
-                        <div className="timeline-center-node teal-theme">
-                          <div className="timeline-dot-inner"></div>
-                        </div>
-                        <div className="timeline-badge-group right-align">
-                          <div className="timeline-connector-line"></div>
-                          <div className="timeline-circle-badge teal-theme">
-                            <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
-                          </div>
-                          <span className="timeline-year">2022 - 2023</span>
-                        </div>
-                      </div>
-
-                      {/* 10th Grade */}
-                      <div
-                        className="journey-timeline-grid"
-                        style={{
-                          opacity: edItem3Opacity,
-                          transform: `translateY(${edItem3Translate}px)`,
-                          transition: 'opacity 0.1s ease, transform 0.1s ease'
-                        }}
-                      >
-                        <div className="timeline-badge-group left-align">
-                          <span className="timeline-year">2020 - 2021</span>
-                          <div className="timeline-circle-badge blue-theme">
-                            <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                            </div>
-                          <div className="timeline-connector-line"></div>
-                        </div>
-                        <div className="timeline-center-node blue-theme">
-                          <div className="timeline-dot-inner"></div>
-                        </div>
-                        <div className="timeline-text-content right-align">
-                          <h3 className="timeline-item-title">Secondary Education (Class X - CBSE)</h3>
-                          <p className="timeline-item-institution">Aditya Vidyashram, Puducherry</p>
-                          <p className="timeline-item-details">Passed out Year: 2021 | Percentage : 87%</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Certifications Section */}
-                    <div className="journey-certifications">
-                      <h2
-                        className="journey-title-minimal"
-                        style={{
-                          opacity: certHeaderOpacity,
-                          transform: `translateY(${certHeaderTranslateY}px)`,
-                          transition: 'opacity 0.1s ease, transform 0.1s ease',
-                          visibility: certHeaderOpacity === 0 ? 'hidden' : 'visible'
-                        }}
-                      >
-                        Certifications
-                      </h2>
-
-                      <div className="cert-cards-container">
-                        {/* Card 1 */}
-                        <div
-                          className="cert-card"
-                          style={{
-                            opacity: certCard1Opacity,
-                            transform: `translateY(${certCard1TranslateY}px)`,
-                            transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: certCard1Opacity === 0 ? 'hidden' : 'visible'
-                          }}
-                        >
-                          <div className="cert-card-icon">
-                            <img src={asset('/Icons/linkedin-learning.svg')} alt="LinkedIn Learning" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                          </div>
-                          <h3 className="cert-card-title">Power BI: Dashboards for Beginners</h3>
-                          <p className="cert-card-issuer">LinkedIn Learning (2026)</p>
-                          <p className="cert-card-desc">Mastered dynamic business intelligence reporting, data modeling, custom DAX measures, and cross-filtering analytical dashboard views.</p>
-                          <a
-                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="cert-credential-btn"
-                          >
-                            Show credentials
-                          </a>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div
-                          className="cert-card"
-                          style={{
-                            opacity: certCard2Opacity,
-                            transform: `translateY(${certCard2TranslateY}px)`,
-                            transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: certCard2Opacity === 0 ? 'hidden' : 'visible'
-                          }}
-                        >
-                          <div className="cert-card-icon">
-                            <img src={asset('/Icons/Python icon.png')} alt="FITA Academy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                          </div>
-                          <h3 className="cert-card-title">Data Analytics (Python, SQL, Power BI)</h3>
-                          <p className="cert-card-issuer">FITA Academy</p>
-                          <p className="cert-card-desc">Comprehensive certification in relational SQL database management, Python exploratory data analysis (Pandas & NumPy), and Power BI reporting.</p>
-                          <a
-                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="cert-credential-btn"
-                          >
-                            Show credentials
-                          </a>
-                        </div>
-
-                        {/* Card 3 */}
-                        <div
-                          className="cert-card"
-                          style={{
-                            opacity: certCard3Opacity,
-                            transform: `translateY(${certCard3TranslateY}px)`,
-                            transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: certCard3Opacity === 0 ? 'hidden' : 'visible'
-                          }}
-                        >
-                          <div className="cert-card-icon">
-                            <img src={asset('/Icons/Gemini icon.svg')} alt="SAWIT.AI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                          </div>
-                          <h3 className="cert-card-title">Fundamentals of Generative AI</h3>
-                          <p className="cert-card-issuer">SAWIT.AI Learnathon (GUVI, AICTE)</p>
-                          <p className="cert-card-desc">Gained foundational mastery of LLM architectures, generative AI paradigms, prompt design, and practical AI workflow development.</p>
-                          <a
-                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="cert-credential-btn"
-                          >
-                            Show credentials
-                          </a>
-                        </div>
-
-                        {/* Card 4 */}
-                        <div
-                          className="cert-card"
-                          style={{
-                            opacity: certCard4Opacity,
-                            transform: `translateY(${certCard4TranslateY}px)`,
-                            transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: certCard4Opacity === 0 ? 'hidden' : 'visible'
-                          }}
-                        >
-                          <div className="cert-card-icon">
-                            <img src={asset('/Icons/nptel.svg')} alt="NPTEL" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                          </div>
-                          <h3 className="cert-card-title">Programming, Data Structures & Algorithms</h3>
-                          <p className="cert-card-issuer">NPTEL</p>
-                          <p className="cert-card-desc">Rigorous academic curriculum covering algorithmic complexity, sorting, searching, recursion, and core data structure implementations using Python.</p>
-                          <a
-                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="cert-credential-btn"
-                          >
-                            Show credentials
-                          </a>
-                        </div>
-
-                        {/* Card 5 */}
-                        <div
-                          className="cert-card"
-                          style={{
-                            opacity: certCard5Opacity,
-                            transform: `translateY(${certCard5TranslateY}px)`,
-                            transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: certCard5Opacity === 0 ? 'hidden' : 'visible'
-                          }}
-                        >
-                          <div className="cert-card-icon">
-                            <img src={asset('/Icons/guvi.svg')} alt="GUVI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                          </div>
-                          <h3 className="cert-card-title">Python Programming</h3>
-                          <p className="cert-card-issuer">GUVI (HCL Group)</p>
-                          <p className="cert-card-desc">Demonstrated core and advanced Python proficiency, object-oriented concepts, and computational problem solving.</p>
-                          <a
-                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="cert-credential-btn"
-                          >
-                            Show credentials
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Experience Section */}
-                    <div className="journey-experience" style={{ marginTop: '100px', paddingBottom: '100px', width: '100%' }}>
-                      <h2
-                        className="journey-title-minimal"
-                        style={{
-                          opacity: expHeaderOpacity,
-                          transform: `translateY(${expHeaderTranslateY}px)`,
-                          transition: 'opacity 0.1s ease, transform 0.1s ease',
-                          visibility: expHeaderOpacity === 0 ? 'hidden' : 'visible',
-                          textAlign: 'center'
-                        }}
-                      >
-                        Experience & Internships
-                      </h2>
-
-                      <div className="journey-timeline-map" style={{ marginTop: '60px' }}>
-                        <div className="journey-timeline-line" style={{ opacity: expHeaderOpacity }}></div>
-
-                        {/* Experience Item 1: IISc */}
-                        <div
-                          className="journey-timeline-grid"
-                          style={{
-                            opacity: expItem1Opacity,
-                            transform: `translateY(${expItem1TranslateY}px)`,
-                            transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: expItem1Opacity === 0 ? 'hidden' : 'visible',
-                            marginBottom: '50px'
-                          }}
-                        >
-                          <div className="timeline-text-content left-align">
-                            <h3 className="timeline-item-title">Data & Research Intern</h3>
-                            <p className="timeline-item-institution">Indian Institute of Science (IISc), Bengaluru</p>
-                            <div className="timeline-item-details" style={{ marginTop: '15px' }}>
-                              <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                Programmed graphical algorithm simulations in Python for Numerical Analysis (Newton's method, fixed points, piecewise interpolation) under Prof. Thirupathi Gudi to model non-linear functional convergence.
-                              </p>
-                              <p style={{ margin: '8px 0 0 0', color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                Conducted statistical research and presented QSAR (Quantitative Structure-Activity Relationship) predictive models for drug discovery to Principal Research Scientist Dr. Sathishkumar Ranganathan.
-                              </p>
-                            </div>
                           </div>
                           <div className="timeline-center-node orange-theme">
                             <div className="timeline-dot-inner"></div>
                           </div>
-                          <div className="timeline-badge-group right-align">
-                            <div className="timeline-connector-line"></div>
-                            <div className="timeline-circle-badge orange-theme">
-                              <img src={asset('/Images/iisc.png')} alt="IISc" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />                              </div>
-                            <span className="timeline-year">June 2026 – July 2026</span>
+                          <div className="timeline-text-content right-align">
+                            <h3 className="timeline-item-title">Bachelor of Technology in Information Science Engineering</h3>
+                            <p className="timeline-item-institution">Women's Engineering College, Puducherry</p>
+                            <p className="timeline-item-details">CGPA : 9.12 / 10.00 | Student Placement Coordinator</p>
                           </div>
                         </div>
 
-                        {/* Experience Item 2: Deloitte */}
+                        {/* 12th Grade */}
                         <div
                           className="journey-timeline-grid alternate"
                           style={{
-                            opacity: expItem2Opacity,
-                            transform: `translateY(${expItem2TranslateY}px)`,
-                            transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: expItem2Opacity === 0 ? 'hidden' : 'visible',
-                            marginBottom: '50px'
+                            opacity: edItem2Opacity,
+                            transform: `translateY(${edItem2Translate}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease'
                           }}
                         >
-                          <div className="timeline-badge-group left-align">
-                            <span className="timeline-year">2025 | Remote</span>
-                            <div className="timeline-circle-badge teal-theme">
-                              <img src={asset('/Images/forage.jpg')} alt="Deloitte" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                              </div>
-                            <div className="timeline-connector-line"></div>
+                          <div className="timeline-text-content left-align">
+                            <h3 className="timeline-item-title">Higher Secondary Education (Class XII - CBSE)</h3>
+                            <p className="timeline-item-institution">Aditya Vidyashram, Puducherry</p>
+                            <p className="timeline-item-details">Passed out Year: 2023 | Percentage : 81%</p>
                           </div>
                           <div className="timeline-center-node teal-theme">
                             <div className="timeline-dot-inner"></div>
                           </div>
-                          <div className="timeline-text-content right-align">
-                            <h3 className="timeline-item-title">Data Analytics [Virtual Internship]</h3>
-                            <p className="timeline-item-institution">Deloitte (Forage Platform)</p>
-                            <div className="timeline-item-details" style={{ marginTop: '15px' }}>
-                              <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                Cleaned, analysed, and visualised real-world datasets to simulate a client analytics engagement. Built insight dashboards using Python, producing actionable business recommendations across full project lifecycles.
-                              </p>
+                          <div className="timeline-badge-group right-align">
+                            <div className="timeline-connector-line"></div>
+                            <div className="timeline-circle-badge teal-theme">
+                              <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
                             </div>
+                            <span className="timeline-year">2022 - 2023</span>
                           </div>
                         </div>
 
-                        {/* Experience Item 3: Aravind Eye Hospital */}
+                        {/* 10th Grade */}
                         <div
                           className="journey-timeline-grid"
                           style={{
-                            opacity: expItem3Opacity,
-                            transform: `translateY(${expItem3TranslateY}px)`,
-                            transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: expItem3Opacity === 0 ? 'hidden' : 'visible',
-                            marginBottom: 0
+                            opacity: edItem3Opacity,
+                            transform: `translateY(${edItem3Translate}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease'
                           }}
                         >
-                          <div className="timeline-text-content left-align">
-                            <h3 className="timeline-item-title">Healthcare IT Intern</h3>
-                            <p className="timeline-item-institution">Aravind Eye Hospital, Puducherry</p>
-                            <div className="timeline-item-details" style={{ marginTop: '15px' }}>
-                              <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                Proposed an Aadhaar QR scanning solution to auto-fill patient registration, cutting manual entry time. Mapped healthcare data workflows and identified critical system bottlenecks.
-                              </p>
-                            </div>
+                          <div className="timeline-badge-group left-align">
+                            <span className="timeline-year">2020 - 2021</span>
+                            <div className="timeline-circle-badge blue-theme">
+                              <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                            </div>
+                            <div className="timeline-connector-line"></div>
                           </div>
                           <div className="timeline-center-node blue-theme">
                             <div className="timeline-dot-inner"></div>
                           </div>
-                          <div className="timeline-badge-group right-align">
-                            <div className="timeline-connector-line"></div>
-                            <div className="timeline-circle-badge blue-theme">
-                              <img src={asset('/Images/aravind.jpg')} alt="Aravind Eye Hospital" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />                              </div>
-                            <span className="timeline-year">Puducherry, India</span>
+                          <div className="timeline-text-content right-align">
+                            <h3 className="timeline-item-title">Secondary Education (Class X - CBSE)</h3>
+                            <p className="timeline-item-institution">Aditya Vidyashram, Puducherry</p>
+                            <p className="timeline-item-details">Passed out Year: 2021 | Percentage : 87%</p>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-                    {/* 3. JOURNEY ENDING FOOTER */}
-                    <div
-                      className="journey-footer"
-                      style={{
-                        opacity: journeyFooterOpacity,
-                        transform: `translateY(${journeyFooterTranslateY}px)`,
-                        transition: 'opacity 0.1s ease, transform 0.1s ease',
-                        visibility: journeyFooterOpacity === 0 ? 'hidden' : 'visible'
-                      }}
-                    >
-                      <div className="footer-top">
-                        <p className="footer-subtitle">THAT'S ALL FOR NOW.</p>
-                        <h2 className="footer-title">Got an opportunity in mind?<br />Let's talk</h2>
-                      </div>
+                      {/* Certifications Section */}
+                      <div className="journey-certifications">
+                        <h2
+                          className="journey-title-minimal"
+                          style={{
+                            opacity: certHeaderOpacity,
+                            transform: `translateY(${certHeaderTranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: certHeaderOpacity === 0 ? 'hidden' : 'visible'
+                          }}
+                        >
+                          Certifications
+                        </h2>
 
-                      <div className="footer-divider-container">
-                        <div className="footer-divider-line"></div>
-                        <button className="footer-get-in-touch-btn" onClick={() => handleNavClick('Contact')}>
-                          Get in touch
-                        </button>
-                      </div>
+                        <div className="cert-cards-container">
+                          {/* Card 1 */}
+                          <div
+                            className="cert-card"
+                            style={{
+                              opacity: certCard1Opacity,
+                              transform: `translateY(${certCard1TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: certCard1Opacity === 0 ? 'hidden' : 'visible'
+                            }}
+                          >
+                            <div className="cert-card-icon">
+                              <img src={asset('/Icons/linkedin-learning.svg')} alt="LinkedIn Learning" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            </div>
+                            <h3 className="cert-card-title">Power BI: Dashboards for Beginners</h3>
+                            <p className="cert-card-issuer">LinkedIn Learning (2026)</p>
+                            <p className="cert-card-desc">Mastered dynamic business intelligence reporting, data modeling, custom DAX measures, and cross-filtering analytical dashboard views.</p>
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="cert-credential-btn"
+                            >
+                              Show credentials
+                            </a>
+                          </div>
 
-                      <div className="footer-bottom">
-                        <div className="footer-contact-item">
-                          <span className="footer-contact-label">EMAIL</span>
-                          <a href="mailto:ranjanadevi.180264@gmail.com" className="footer-contact-value">ranjanadevi.180264@gmail.com</a>
+                          {/* Card 2 */}
+                          <div
+                            className="cert-card"
+                            style={{
+                              opacity: certCard2Opacity,
+                              transform: `translateY(${certCard2TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: certCard2Opacity === 0 ? 'hidden' : 'visible'
+                            }}
+                          >
+                            <div className="cert-card-icon">
+                              <img src={asset('/Icons/Python icon.png')} alt="FITA Academy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            </div>
+                            <h3 className="cert-card-title">Data Analytics (Python, SQL, Power BI)</h3>
+                            <p className="cert-card-issuer">FITA Academy</p>
+                            <p className="cert-card-desc">Comprehensive certification in relational SQL database management, Python exploratory data analysis (Pandas & NumPy), and Power BI reporting.</p>
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="cert-credential-btn"
+                            >
+                              Show credentials
+                            </a>
+                          </div>
+
+                          {/* Card 3 */}
+                          <div
+                            className="cert-card"
+                            style={{
+                              opacity: certCard3Opacity,
+                              transform: `translateY(${certCard3TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: certCard3Opacity === 0 ? 'hidden' : 'visible'
+                            }}
+                          >
+                            <div className="cert-card-icon">
+                              <img src={asset('/Icons/Gemini icon.svg')} alt="SAWIT.AI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            </div>
+                            <h3 className="cert-card-title">Fundamentals of Generative AI</h3>
+                            <p className="cert-card-issuer">SAWIT.AI Learnathon (GUVI, AICTE)</p>
+                            <p className="cert-card-desc">Gained foundational mastery of LLM architectures, generative AI paradigms, prompt design, and practical AI workflow development.</p>
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="cert-credential-btn"
+                            >
+                              Show credentials
+                            </a>
+                          </div>
+
+                          {/* Card 4 */}
+                          <div
+                            className="cert-card"
+                            style={{
+                              opacity: certCard4Opacity,
+                              transform: `translateY(${certCard4TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: certCard4Opacity === 0 ? 'hidden' : 'visible'
+                            }}
+                          >
+                            <div className="cert-card-icon">
+                              <img src={asset('/Icons/nptel.svg')} alt="NPTEL" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            </div>
+                            <h3 className="cert-card-title">Programming, Data Structures & Algorithms</h3>
+                            <p className="cert-card-issuer">NPTEL</p>
+                            <p className="cert-card-desc">Rigorous academic curriculum covering algorithmic complexity, sorting, searching, recursion, and core data structure implementations using Python.</p>
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="cert-credential-btn"
+                            >
+                              Show credentials
+                            </a>
+                          </div>
+
+                          {/* Card 5 */}
+                          <div
+                            className="cert-card"
+                            style={{
+                              opacity: certCard5Opacity,
+                              transform: `translateY(${certCard5TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: certCard5Opacity === 0 ? 'hidden' : 'visible'
+                            }}
+                          >
+                            <div className="cert-card-icon">
+                              <img src={asset('/Icons/guvi.svg')} alt="GUVI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            </div>
+                            <h3 className="cert-card-title">Python Programming</h3>
+                            <p className="cert-card-issuer">GUVI (HCL Group)</p>
+                            <p className="cert-card-desc">Demonstrated core and advanced Python proficiency, object-oriented concepts, and computational problem solving.</p>
+                            <a
+                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="cert-credential-btn"
+                            >
+                              Show credentials
+                            </a>
+                          </div>
                         </div>
-                        <div className="footer-contact-item">
-                          <span className="footer-contact-label">PHONE</span>
-                          <a href="tel:+919176317764" className="footer-contact-value">(+91) 9176317764</a>
+                      </div>
+
+                      {/* Experience Section */}
+                      <div className="journey-experience" style={{ marginTop: '100px', paddingBottom: '100px', width: '100%' }}>
+                        <h2
+                          className="journey-title-minimal"
+                          style={{
+                            opacity: expHeaderOpacity,
+                            transform: `translateY(${expHeaderTranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: expHeaderOpacity === 0 ? 'hidden' : 'visible',
+                            textAlign: 'center'
+                          }}
+                        >
+                          Experience & Internships
+                        </h2>
+
+                        <div className="journey-timeline-map" style={{ marginTop: '60px' }}>
+                          <div className="journey-timeline-line" style={{ opacity: expHeaderOpacity }}></div>
+
+                          {/* Experience Item 1: IISc */}
+                          <div
+                            className="journey-timeline-grid"
+                            style={{
+                              opacity: expItem1Opacity,
+                              transform: `translateY(${expItem1TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: expItem1Opacity === 0 ? 'hidden' : 'visible',
+                              marginBottom: '50px'
+                            }}
+                          >
+                            <div className="timeline-text-content left-align">
+                              <h3 className="timeline-item-title">Data & Research Intern</h3>
+                              <p className="timeline-item-institution">Indian Institute of Science (IISc), Bengaluru</p>
+                              <div className="timeline-item-details" style={{ marginTop: '15px' }}>
+                                <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                  Programmed graphical algorithm simulations in Python for Numerical Analysis (Newton's method, fixed points, piecewise interpolation) under Prof. Thirupathi Gudi to model non-linear functional convergence.
+                                </p>
+                                <p style={{ margin: '8px 0 0 0', color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                  Conducted statistical research and presented QSAR (Quantitative Structure-Activity Relationship) predictive models for drug discovery to Principal Research Scientist Dr. Sathishkumar Ranganathan.
+                                </p>
+                              </div>
+                            </div>
+                            <div className="timeline-center-node orange-theme">
+                              <div className="timeline-dot-inner"></div>
+                            </div>
+                            <div className="timeline-badge-group right-align">
+                              <div className="timeline-connector-line"></div>
+                              <div className="timeline-circle-badge orange-theme">
+                                <img src={asset('/Images/iisc.png')} alt="IISc" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />                              </div>
+                              <span className="timeline-year">June 2026 – July 2026</span>
+                            </div>
+                          </div>
+
+                          {/* Experience Item 2: Deloitte */}
+                          <div
+                            className="journey-timeline-grid alternate"
+                            style={{
+                              opacity: expItem2Opacity,
+                              transform: `translateY(${expItem2TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: expItem2Opacity === 0 ? 'hidden' : 'visible',
+                              marginBottom: '50px'
+                            }}
+                          >
+                            <div className="timeline-badge-group left-align">
+                              <span className="timeline-year">2025 | Remote</span>
+                              <div className="timeline-circle-badge teal-theme">
+                                <img src={asset('/Images/forage.jpg')} alt="Deloitte" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                              </div>
+                              <div className="timeline-connector-line"></div>
+                            </div>
+                            <div className="timeline-center-node teal-theme">
+                              <div className="timeline-dot-inner"></div>
+                            </div>
+                            <div className="timeline-text-content right-align">
+                              <h3 className="timeline-item-title">Data Analytics [Virtual Internship]</h3>
+                              <p className="timeline-item-institution">Deloitte (Forage Platform)</p>
+                              <div className="timeline-item-details" style={{ marginTop: '15px' }}>
+                                <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                  Cleaned, analysed, and visualised real-world datasets to simulate a client analytics engagement. Built insight dashboards using Python, producing actionable business recommendations across full project lifecycles.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Experience Item 3: Aravind Eye Hospital */}
+                          <div
+                            className="journey-timeline-grid"
+                            style={{
+                              opacity: expItem3Opacity,
+                              transform: `translateY(${expItem3TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: expItem3Opacity === 0 ? 'hidden' : 'visible',
+                              marginBottom: 0
+                            }}
+                          >
+                            <div className="timeline-text-content left-align">
+                              <h3 className="timeline-item-title">Healthcare IT Intern</h3>
+                              <p className="timeline-item-institution">Aravind Eye Hospital, Puducherry</p>
+                              <div className="timeline-item-details" style={{ marginTop: '15px' }}>
+                                <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                  Proposed an Aadhaar QR scanning solution to auto-fill patient registration, cutting manual entry time. Mapped healthcare data workflows and identified critical system bottlenecks.
+                                </p>
+                              </div>
+                            </div>
+                            <div className="timeline-center-node blue-theme">
+                              <div className="timeline-dot-inner"></div>
+                            </div>
+                            <div className="timeline-badge-group right-align">
+                              <div className="timeline-connector-line"></div>
+                              <div className="timeline-circle-badge blue-theme">
+                                <img src={asset('/Images/aravind.jpg')} alt="Aravind Eye Hospital" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />                              </div>
+                              <span className="timeline-year">Puducherry, India</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
+                      {/* 3. JOURNEY ENDING FOOTER */}
+                      <div
+                        className="journey-footer"
+                        style={{
+                          opacity: journeyFooterOpacity,
+                          transform: `translateY(${journeyFooterTranslateY}px)`,
+                          transition: 'opacity 0.1s ease, transform 0.1s ease',
+                          visibility: journeyFooterOpacity === 0 ? 'hidden' : 'visible'
+                        }}
+                      >
+                        <div className="footer-top">
+                          <p className="footer-subtitle">THAT'S ALL FOR NOW.</p>
+                          <h2 className="footer-title">Got an opportunity in mind?<br />Let's talk</h2>
+                        </div>
+
+                        <div className="footer-divider-container">
+                          <div className="footer-divider-line"></div>
+                          <button className="footer-get-in-touch-btn" onClick={() => handleNavClick('Contact')}>
+                            Get in touch
+                          </button>
+                        </div>
+
+                        <div className="footer-bottom">
+                          <div className="footer-contact-item">
+                            <span className="footer-contact-label">EMAIL</span>
+                            <a href="mailto:ranjanadevi.180264@gmail.com" className="footer-contact-value">ranjanadevi.180264@gmail.com</a>
+                          </div>
+                          <div className="footer-contact-item">
+                            <span className="footer-contact-label">PHONE</span>
+                            <a href="tel:+919176317764" className="footer-contact-value">(+91) 9176317764</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
                   </div>
-                </div>
 
+                </div>
               </div>
             </div>
-
           ) : activeTab === 'Project' ? (
             <div className="projects-page-container">
               <div className="projects-hero-header">
@@ -1840,8 +1824,8 @@ function App() {
             </div>
           )}
         </div>
-      </main >
-    </div >
+      </main>
+    </div>
   )
 }
 
