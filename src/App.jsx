@@ -743,1093 +743,1105 @@ function App() {
                         >
                           <div className="timeline-badge-group left-align">
                             <span className="timeline-year">2023 - Present (Exp. 2027)</span>
-                            <div className="timeline-circle-badge orange-theme">
-                              <div
-                                className="timeline-circle-badge orange-theme"
+
+                            <div
+                              className="timeline-circle-badge orange-theme"
+                              style={{
+                                width: '80px',
+                                height: '80px',
+                                aspectRatio: '1 / 1',
+                                borderRadius: '50%',
+                                overflow: 'hidden',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center'
+                              }}
+                            >
+                              <img
+                                src={asset('/Images/wec.jpg')}
+                                alt="Women's Engineering College"
                                 style={{
-                                  width: '80px',            // Set explicit equal width & height
-                                  height: '80px',
-                                  aspectRatio: '1 / 1',      // Forces strict 1:1 square ratio
-                                  borderRadius: '50%',       // Keeps container circular
-                                  overflow: 'hidden',        // Clips inner image to bounds
-                                  display: 'flex',
-                                  alignItems: 'center',
-                                  justifyContent: 'center'
+                                  width: '100%',
+                                  height: '100%',
+                                  objectFit: 'cover',
+                                  borderRadius: '50%'
                                 }}
-                              >
-                                <img src={asset('/Images/wec.jpg')} alt="Women's Engineering College" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
-                              </div>
-                              <div className="timeline-connector-line"></div>
+                              />
                             </div>
-                            <div className="timeline-center-node orange-theme">
-                              <div className="timeline-dot-inner"></div>
-                            </div>
-                            <div className="timeline-text-content right-align">
-                              <h3 className="timeline-item-title">Bachelor of Technology in Information Science Engineering</h3>
-                              <p className="timeline-item-institution">Women's Engineering College, Puducherry</p>
-                              <p className="timeline-item-details">CGPA : 9.12 / 10.00 | Student Placement Coordinator</p>
-                            </div>
-                          </div>
 
-                          {/* 12th Grade */}
-                          <div
-                            className="journey-timeline-grid alternate"
-                            style={{
-                              opacity: edItem2Opacity,
-                              transform: `translateY(${edItem2Translate}px)`,
-                              transition: 'opacity 0.1s ease, transform 0.1s ease'
-                            }}
-                          >
-                            <div className="timeline-text-content left-align">
-                              <h3 className="timeline-item-title">Higher Secondary Education (Class XII - CBSE)</h3>
-                              <p className="timeline-item-institution">Aditya Vidyashram, Puducherry</p>
-                              <p className="timeline-item-details">Passed out Year: 2023 | Percentage : 81%</p>
-                            </div>
-                            <div className="timeline-center-node teal-theme">
-                              <div className="timeline-dot-inner"></div>
-                            </div>
-                            <div className="timeline-badge-group right-align">
-                              <div className="timeline-connector-line"></div>
-                              <div className="timeline-circle-badge teal-theme">
-                                <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
-                              </div>
-                              <span className="timeline-year">2022 - 2023</span>
-                            </div>
+                            <div className="timeline-connector-line"></div>
                           </div>
-
-                          {/* 10th Grade */}
-                          <div
-                            className="journey-timeline-grid"
-                            style={{
-                              opacity: edItem3Opacity,
-                              transform: `translateY(${edItem3Translate}px)`,
-                              transition: 'opacity 0.1s ease, transform 0.1s ease'
-                            }}
-                          >
-                            <div className="timeline-badge-group left-align">
-                              <span className="timeline-year">2020 - 2021</span>
-                              <div className="timeline-circle-badge blue-theme">
-                                <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                            </div>
-                              <div className="timeline-connector-line"></div>
-                            </div>
-                            <div className="timeline-center-node blue-theme">
-                              <div className="timeline-dot-inner"></div>
-                            </div>
-                            <div className="timeline-text-content right-align">
-                              <h3 className="timeline-item-title">Secondary Education (Class X - CBSE)</h3>
-                              <p className="timeline-item-institution">Aditya Vidyashram, Puducherry</p>
-                              <p className="timeline-item-details">Passed out Year: 2021 | Percentage : 87%</p>
-                            </div>
-                          </div>
+                          <div className="timeline-connector-line"></div>
                         </div>
-
-                        {/* Certifications Section */}
-                        <div className="journey-certifications">
-                          <h2
-                            className="journey-title-minimal"
-                            style={{
-                              opacity: certHeaderOpacity,
-                              transform: `translateY(${certHeaderTranslateY}px)`,
-                              transition: 'opacity 0.1s ease, transform 0.1s ease',
-                              visibility: certHeaderOpacity === 0 ? 'hidden' : 'visible'
-                            }}
-                          >
-                            Certifications
-                          </h2>
-
-                          <div className="cert-cards-container">
-                            {/* Card 1 */}
-                            <div
-                              className="cert-card"
-                              style={{
-                                opacity: certCard1Opacity,
-                                transform: `translateY(${certCard1TranslateY}px)`,
-                                transition: 'opacity 0.1s ease, transform 0.1s ease',
-                                visibility: certCard1Opacity === 0 ? 'hidden' : 'visible'
-                              }}
-                            >
-                              <div className="cert-card-icon">
-                                <img src={asset('/Icons/linkedin-learning.svg')} alt="LinkedIn Learning" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                              </div>
-                              <h3 className="cert-card-title">Power BI: Dashboards for Beginners</h3>
-                              <p className="cert-card-issuer">LinkedIn Learning (2026)</p>
-                              <p className="cert-card-desc">Mastered dynamic business intelligence reporting, data modeling, custom DAX measures, and cross-filtering analytical dashboard views.</p>
-                              <a
-                                href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="cert-credential-btn"
-                              >
-                                Show credentials
-                              </a>
-                            </div>
-
-                            {/* Card 2 */}
-                            <div
-                              className="cert-card"
-                              style={{
-                                opacity: certCard2Opacity,
-                                transform: `translateY(${certCard2TranslateY}px)`,
-                                transition: 'opacity 0.1s ease, transform 0.1s ease',
-                                visibility: certCard2Opacity === 0 ? 'hidden' : 'visible'
-                              }}
-                            >
-                              <div className="cert-card-icon">
-                                <img src={asset('/Icons/Python icon.png')} alt="FITA Academy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                              </div>
-                              <h3 className="cert-card-title">Data Analytics (Python, SQL, Power BI)</h3>
-                              <p className="cert-card-issuer">FITA Academy</p>
-                              <p className="cert-card-desc">Comprehensive certification in relational SQL database management, Python exploratory data analysis (Pandas & NumPy), and Power BI reporting.</p>
-                              <a
-                                href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="cert-credential-btn"
-                              >
-                                Show credentials
-                              </a>
-                            </div>
-
-                            {/* Card 3 */}
-                            <div
-                              className="cert-card"
-                              style={{
-                                opacity: certCard3Opacity,
-                                transform: `translateY(${certCard3TranslateY}px)`,
-                                transition: 'opacity 0.1s ease, transform 0.1s ease',
-                                visibility: certCard3Opacity === 0 ? 'hidden' : 'visible'
-                              }}
-                            >
-                              <div className="cert-card-icon">
-                                <img src={asset('/Icons/Gemini icon.svg')} alt="SAWIT.AI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                              </div>
-                              <h3 className="cert-card-title">Fundamentals of Generative AI</h3>
-                              <p className="cert-card-issuer">SAWIT.AI Learnathon (GUVI, AICTE)</p>
-                              <p className="cert-card-desc">Gained foundational mastery of LLM architectures, generative AI paradigms, prompt design, and practical AI workflow development.</p>
-                              <a
-                                href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="cert-credential-btn"
-                              >
-                                Show credentials
-                              </a>
-                            </div>
-
-                            {/* Card 4 */}
-                            <div
-                              className="cert-card"
-                              style={{
-                                opacity: certCard4Opacity,
-                                transform: `translateY(${certCard4TranslateY}px)`,
-                                transition: 'opacity 0.1s ease, transform 0.1s ease',
-                                visibility: certCard4Opacity === 0 ? 'hidden' : 'visible'
-                              }}
-                            >
-                              <div className="cert-card-icon">
-                                <img src={asset('/Icons/nptel.svg')} alt="NPTEL" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                              </div>
-                              <h3 className="cert-card-title">Programming, Data Structures & Algorithms</h3>
-                              <p className="cert-card-issuer">NPTEL</p>
-                              <p className="cert-card-desc">Rigorous academic curriculum covering algorithmic complexity, sorting, searching, recursion, and core data structure implementations using Python.</p>
-                              <a
-                                href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="cert-credential-btn"
-                              >
-                                Show credentials
-                              </a>
-                            </div>
-
-                            {/* Card 5 */}
-                            <div
-                              className="cert-card"
-                              style={{
-                                opacity: certCard5Opacity,
-                                transform: `translateY(${certCard5TranslateY}px)`,
-                                transition: 'opacity 0.1s ease, transform 0.1s ease',
-                                visibility: certCard5Opacity === 0 ? 'hidden' : 'visible'
-                              }}
-                            >
-                              <div className="cert-card-icon">
-                                <img src={asset('/Icons/guvi.svg')} alt="GUVI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-                              </div>
-                              <h3 className="cert-card-title">Python Programming</h3>
-                              <p className="cert-card-issuer">GUVI (HCL Group)</p>
-                              <p className="cert-card-desc">Demonstrated core and advanced Python proficiency, object-oriented concepts, and computational problem solving.</p>
-                              <a
-                                href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="cert-credential-btn"
-                              >
-                                Show credentials
-                              </a>
-                            </div>
-                          </div>
+                        <div className="timeline-center-node orange-theme">
+                          <div className="timeline-dot-inner"></div>
                         </div>
-
-                        {/* Experience Section */}
-                        <div className="journey-experience" style={{ marginTop: '100px', paddingBottom: '100px', width: '100%' }}>
-                          <h2
-                            className="journey-title-minimal"
-                            style={{
-                              opacity: expHeaderOpacity,
-                              transform: `translateY(${expHeaderTranslateY}px)`,
-                              transition: 'opacity 0.1s ease, transform 0.1s ease',
-                              visibility: expHeaderOpacity === 0 ? 'hidden' : 'visible',
-                              textAlign: 'center'
-                            }}
-                          >
-                            Experience & Internships
-                          </h2>
-
-                          <div className="journey-timeline-map" style={{ marginTop: '60px' }}>
-                            <div className="journey-timeline-line" style={{ opacity: expHeaderOpacity }}></div>
-
-                            {/* Experience Item 1: IISc */}
-                            <div
-                              className="journey-timeline-grid"
-                              style={{
-                                opacity: expItem1Opacity,
-                                transform: `translateY(${expItem1TranslateY}px)`,
-                                transition: 'opacity 0.1s ease, transform 0.1s ease',
-                                visibility: expItem1Opacity === 0 ? 'hidden' : 'visible',
-                                marginBottom: '50px'
-                              }}
-                            >
-                              <div className="timeline-text-content left-align">
-                                <h3 className="timeline-item-title">Data & Research Intern</h3>
-                                <p className="timeline-item-institution">Indian Institute of Science (IISc), Bengaluru</p>
-                                <div className="timeline-item-details" style={{ marginTop: '15px' }}>
-                                  <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                    Programmed graphical algorithm simulations in Python for Numerical Analysis (Newton's method, fixed points, piecewise interpolation) under Prof. Thirupathi Gudi to model non-linear functional convergence.
-                                  </p>
-                                  <p style={{ margin: '8px 0 0 0', color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                    Conducted statistical research and presented QSAR (Quantitative Structure-Activity Relationship) predictive models for drug discovery to Principal Research Scientist Dr. Sathishkumar Ranganathan.
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="timeline-center-node orange-theme">
-                                <div className="timeline-dot-inner"></div>
-                              </div>
-                              <div className="timeline-badge-group right-align">
-                                <div className="timeline-connector-line"></div>
-                                <div className="timeline-circle-badge orange-theme">
-                                  <img src={asset('/Images/iisc.png')} alt="IISc" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />                              </div>
-                                <span className="timeline-year">June 2026 – July 2026</span>
-                              </div>
-                            </div>
-
-                            {/* Experience Item 2: Deloitte */}
-                            <div
-                              className="journey-timeline-grid alternate"
-                              style={{
-                                opacity: expItem2Opacity,
-                                transform: `translateY(${expItem2TranslateY}px)`,
-                                transition: 'opacity 0.1s ease, transform 0.1s ease',
-                                visibility: expItem2Opacity === 0 ? 'hidden' : 'visible',
-                                marginBottom: '50px'
-                              }}
-                            >
-                              <div className="timeline-badge-group left-align">
-                                <span className="timeline-year">2025 | Remote</span>
-                                <div className="timeline-circle-badge teal-theme">
-                                  <img src={asset('/Images/forage.jpg')} alt="Deloitte" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                              </div>
-                                <div className="timeline-connector-line"></div>
-                              </div>
-                              <div className="timeline-center-node teal-theme">
-                                <div className="timeline-dot-inner"></div>
-                              </div>
-                              <div className="timeline-text-content right-align">
-                                <h3 className="timeline-item-title">Data Analytics [Virtual Internship]</h3>
-                                <p className="timeline-item-institution">Deloitte (Forage Platform)</p>
-                                <div className="timeline-item-details" style={{ marginTop: '15px' }}>
-                                  <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                    Cleaned, analysed, and visualised real-world datasets to simulate a client analytics engagement. Built insight dashboards using Python, producing actionable business recommendations across full project lifecycles.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-
-                            {/* Experience Item 3: Aravind Eye Hospital */}
-                            <div
-                              className="journey-timeline-grid"
-                              style={{
-                                opacity: expItem3Opacity,
-                                transform: `translateY(${expItem3TranslateY}px)`,
-                                transition: 'opacity 0.1s ease, transform 0.1s ease',
-                                visibility: expItem3Opacity === 0 ? 'hidden' : 'visible',
-                                marginBottom: 0
-                              }}
-                            >
-                              <div className="timeline-text-content left-align">
-                                <h3 className="timeline-item-title">Healthcare IT Intern</h3>
-                                <p className="timeline-item-institution">Aravind Eye Hospital, Puducherry</p>
-                                <div className="timeline-item-details" style={{ marginTop: '15px' }}>
-                                  <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                                    Proposed an Aadhaar QR scanning solution to auto-fill patient registration, cutting manual entry time. Mapped healthcare data workflows and identified critical system bottlenecks.
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="timeline-center-node blue-theme">
-                                <div className="timeline-dot-inner"></div>
-                              </div>
-                              <div className="timeline-badge-group right-align">
-                                <div className="timeline-connector-line"></div>
-                                <div className="timeline-circle-badge blue-theme">
-                                  <img src={asset('/Images/aravind.jpg')} alt="Aravind Eye Hospital" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />                              </div>
-                                <span className="timeline-year">Puducherry, India</span>
-                              </div>
-                            </div>
-                          </div>
+                        <div className="timeline-text-content right-align">
+                          <h3 className="timeline-item-title">Bachelor of Technology in Information Science Engineering</h3>
+                          <p className="timeline-item-institution">Women's Engineering College, Puducherry</p>
+                          <p className="timeline-item-details">CGPA : 9.12 / 10.00 | Student Placement Coordinator</p>
                         </div>
+                      </div>
 
-                        {/* 3. JOURNEY ENDING FOOTER */}
+                      {/* 12th Grade */}
+                      <div
+                        className="journey-timeline-grid alternate"
+                        style={{
+                          opacity: edItem2Opacity,
+                          transform: `translateY(${edItem2Translate}px)`,
+                          transition: 'opacity 0.1s ease, transform 0.1s ease'
+                        }}
+                      >
+                        <div className="timeline-text-content left-align">
+                          <h3 className="timeline-item-title">Higher Secondary Education (Class XII - CBSE)</h3>
+                          <p className="timeline-item-institution">Aditya Vidyashram, Puducherry</p>
+                          <p className="timeline-item-details">Passed out Year: 2023 | Percentage : 81%</p>
+                        </div>
+                        <div className="timeline-center-node teal-theme">
+                          <div className="timeline-dot-inner"></div>
+                        </div>
+                        <div className="timeline-badge-group right-align">
+                          <div className="timeline-connector-line"></div>
+                          <div className="timeline-circle-badge teal-theme">
+                            <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                          </div>
+                          <span className="timeline-year">2022 - 2023</span>
+                        </div>
+                      </div>
+
+                      {/* 10th Grade */}
+                      <div
+                        className="journey-timeline-grid"
+                        style={{
+                          opacity: edItem3Opacity,
+                          transform: `translateY(${edItem3Translate}px)`,
+                          transition: 'opacity 0.1s ease, transform 0.1s ease'
+                        }}
+                      >
+                        <div className="timeline-badge-group left-align">
+                          <span className="timeline-year">2020 - 2021</span>
+                          <div className="timeline-circle-badge blue-theme">
+                            <img src={asset('/Images/avrs.jpg')} alt="Aditya Vidyashram" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                            </div>
+                          <div className="timeline-connector-line"></div>
+                        </div>
+                        <div className="timeline-center-node blue-theme">
+                          <div className="timeline-dot-inner"></div>
+                        </div>
+                        <div className="timeline-text-content right-align">
+                          <h3 className="timeline-item-title">Secondary Education (Class X - CBSE)</h3>
+                          <p className="timeline-item-institution">Aditya Vidyashram, Puducherry</p>
+                          <p className="timeline-item-details">Passed out Year: 2021 | Percentage : 87%</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Certifications Section */}
+                    <div className="journey-certifications">
+                      <h2
+                        className="journey-title-minimal"
+                        style={{
+                          opacity: certHeaderOpacity,
+                          transform: `translateY(${certHeaderTranslateY}px)`,
+                          transition: 'opacity 0.1s ease, transform 0.1s ease',
+                          visibility: certHeaderOpacity === 0 ? 'hidden' : 'visible'
+                        }}
+                      >
+                        Certifications
+                      </h2>
+
+                      <div className="cert-cards-container">
+                        {/* Card 1 */}
                         <div
-                          className="journey-footer"
+                          className="cert-card"
                           style={{
-                            opacity: journeyFooterOpacity,
-                            transform: `translateY(${journeyFooterTranslateY}px)`,
+                            opacity: certCard1Opacity,
+                            transform: `translateY(${certCard1TranslateY}px)`,
                             transition: 'opacity 0.1s ease, transform 0.1s ease',
-                            visibility: journeyFooterOpacity === 0 ? 'hidden' : 'visible'
+                            visibility: certCard1Opacity === 0 ? 'hidden' : 'visible'
                           }}
                         >
-                          <div className="footer-top">
-                            <p className="footer-subtitle">THAT'S ALL FOR NOW.</p>
-                            <h2 className="footer-title">Got an opportunity in mind?<br />Let's talk</h2>
+                          <div className="cert-card-icon">
+                            <img src={asset('/Icons/linkedin-learning.svg')} alt="LinkedIn Learning" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                           </div>
+                          <h3 className="cert-card-title">Power BI: Dashboards for Beginners</h3>
+                          <p className="cert-card-issuer">LinkedIn Learning (2026)</p>
+                          <p className="cert-card-desc">Mastered dynamic business intelligence reporting, data modeling, custom DAX measures, and cross-filtering analytical dashboard views.</p>
+                          <a
+                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="cert-credential-btn"
+                          >
+                            Show credentials
+                          </a>
+                        </div>
 
-                          <div className="footer-divider-container">
-                            <div className="footer-divider-line"></div>
-                            <button className="footer-get-in-touch-btn" onClick={() => handleNavClick('Contact')}>
-                              Get in touch
-                            </button>
+                        {/* Card 2 */}
+                        <div
+                          className="cert-card"
+                          style={{
+                            opacity: certCard2Opacity,
+                            transform: `translateY(${certCard2TranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: certCard2Opacity === 0 ? 'hidden' : 'visible'
+                          }}
+                        >
+                          <div className="cert-card-icon">
+                            <img src={asset('/Icons/Python icon.png')} alt="FITA Academy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                           </div>
+                          <h3 className="cert-card-title">Data Analytics (Python, SQL, Power BI)</h3>
+                          <p className="cert-card-issuer">FITA Academy</p>
+                          <p className="cert-card-desc">Comprehensive certification in relational SQL database management, Python exploratory data analysis (Pandas & NumPy), and Power BI reporting.</p>
+                          <a
+                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="cert-credential-btn"
+                          >
+                            Show credentials
+                          </a>
+                        </div>
 
-                          <div className="footer-bottom">
-                            <div className="footer-contact-item">
-                              <span className="footer-contact-label">EMAIL</span>
-                              <a href="mailto:ranjanadevi.180264@gmail.com" className="footer-contact-value">ranjanadevi.180264@gmail.com</a>
+                        {/* Card 3 */}
+                        <div
+                          className="cert-card"
+                          style={{
+                            opacity: certCard3Opacity,
+                            transform: `translateY(${certCard3TranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: certCard3Opacity === 0 ? 'hidden' : 'visible'
+                          }}
+                        >
+                          <div className="cert-card-icon">
+                            <img src={asset('/Icons/Gemini icon.svg')} alt="SAWIT.AI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                          </div>
+                          <h3 className="cert-card-title">Fundamentals of Generative AI</h3>
+                          <p className="cert-card-issuer">SAWIT.AI Learnathon (GUVI, AICTE)</p>
+                          <p className="cert-card-desc">Gained foundational mastery of LLM architectures, generative AI paradigms, prompt design, and practical AI workflow development.</p>
+                          <a
+                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="cert-credential-btn"
+                          >
+                            Show credentials
+                          </a>
+                        </div>
+
+                        {/* Card 4 */}
+                        <div
+                          className="cert-card"
+                          style={{
+                            opacity: certCard4Opacity,
+                            transform: `translateY(${certCard4TranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: certCard4Opacity === 0 ? 'hidden' : 'visible'
+                          }}
+                        >
+                          <div className="cert-card-icon">
+                            <img src={asset('/Icons/nptel.svg')} alt="NPTEL" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                          </div>
+                          <h3 className="cert-card-title">Programming, Data Structures & Algorithms</h3>
+                          <p className="cert-card-issuer">NPTEL</p>
+                          <p className="cert-card-desc">Rigorous academic curriculum covering algorithmic complexity, sorting, searching, recursion, and core data structure implementations using Python.</p>
+                          <a
+                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="cert-credential-btn"
+                          >
+                            Show credentials
+                          </a>
+                        </div>
+
+                        {/* Card 5 */}
+                        <div
+                          className="cert-card"
+                          style={{
+                            opacity: certCard5Opacity,
+                            transform: `translateY(${certCard5TranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: certCard5Opacity === 0 ? 'hidden' : 'visible'
+                          }}
+                        >
+                          <div className="cert-card-icon">
+                            <img src={asset('/Icons/guvi.svg')} alt="GUVI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                          </div>
+                          <h3 className="cert-card-title">Python Programming</h3>
+                          <p className="cert-card-issuer">GUVI (HCL Group)</p>
+                          <p className="cert-card-desc">Demonstrated core and advanced Python proficiency, object-oriented concepts, and computational problem solving.</p>
+                          <a
+                            href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="cert-credential-btn"
+                          >
+                            Show credentials
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Experience Section */}
+                    <div className="journey-experience" style={{ marginTop: '100px', paddingBottom: '100px', width: '100%' }}>
+                      <h2
+                        className="journey-title-minimal"
+                        style={{
+                          opacity: expHeaderOpacity,
+                          transform: `translateY(${expHeaderTranslateY}px)`,
+                          transition: 'opacity 0.1s ease, transform 0.1s ease',
+                          visibility: expHeaderOpacity === 0 ? 'hidden' : 'visible',
+                          textAlign: 'center'
+                        }}
+                      >
+                        Experience & Internships
+                      </h2>
+
+                      <div className="journey-timeline-map" style={{ marginTop: '60px' }}>
+                        <div className="journey-timeline-line" style={{ opacity: expHeaderOpacity }}></div>
+
+                        {/* Experience Item 1: IISc */}
+                        <div
+                          className="journey-timeline-grid"
+                          style={{
+                            opacity: expItem1Opacity,
+                            transform: `translateY(${expItem1TranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: expItem1Opacity === 0 ? 'hidden' : 'visible',
+                            marginBottom: '50px'
+                          }}
+                        >
+                          <div className="timeline-text-content left-align">
+                            <h3 className="timeline-item-title">Data & Research Intern</h3>
+                            <p className="timeline-item-institution">Indian Institute of Science (IISc), Bengaluru</p>
+                            <div className="timeline-item-details" style={{ marginTop: '15px' }}>
+                              <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                Programmed graphical algorithm simulations in Python for Numerical Analysis (Newton's method, fixed points, piecewise interpolation) under Prof. Thirupathi Gudi to model non-linear functional convergence.
+                              </p>
+                              <p style={{ margin: '8px 0 0 0', color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                Conducted statistical research and presented QSAR (Quantitative Structure-Activity Relationship) predictive models for drug discovery to Principal Research Scientist Dr. Sathishkumar Ranganathan.
+                              </p>
                             </div>
-                            <div className="footer-contact-item">
-                              <span className="footer-contact-label">PHONE</span>
-                              <a href="tel:+919176317764" className="footer-contact-value">(+91) 9176317764</a>
+                          </div>
+                          <div className="timeline-center-node orange-theme">
+                            <div className="timeline-dot-inner"></div>
+                          </div>
+                          <div className="timeline-badge-group right-align">
+                            <div className="timeline-connector-line"></div>
+                            <div className="timeline-circle-badge orange-theme">
+                              <img src={asset('/Images/iisc.png')} alt="IISc" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />                              </div>
+                            <span className="timeline-year">June 2026 – July 2026</span>
+                          </div>
+                        </div>
+
+                        {/* Experience Item 2: Deloitte */}
+                        <div
+                          className="journey-timeline-grid alternate"
+                          style={{
+                            opacity: expItem2Opacity,
+                            transform: `translateY(${expItem2TranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: expItem2Opacity === 0 ? 'hidden' : 'visible',
+                            marginBottom: '50px'
+                          }}
+                        >
+                          <div className="timeline-badge-group left-align">
+                            <span className="timeline-year">2025 | Remote</span>
+                            <div className="timeline-circle-badge teal-theme">
+                              <img src={asset('/Images/forage.jpg')} alt="Deloitte" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />                              </div>
+                            <div className="timeline-connector-line"></div>
+                          </div>
+                          <div className="timeline-center-node teal-theme">
+                            <div className="timeline-dot-inner"></div>
+                          </div>
+                          <div className="timeline-text-content right-align">
+                            <h3 className="timeline-item-title">Data Analytics [Virtual Internship]</h3>
+                            <p className="timeline-item-institution">Deloitte (Forage Platform)</p>
+                            <div className="timeline-item-details" style={{ marginTop: '15px' }}>
+                              <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                Cleaned, analysed, and visualised real-world datasets to simulate a client analytics engagement. Built insight dashboards using Python, producing actionable business recommendations across full project lifecycles.
+                              </p>
                             </div>
                           </div>
                         </div>
 
+                        {/* Experience Item 3: Aravind Eye Hospital */}
+                        <div
+                          className="journey-timeline-grid"
+                          style={{
+                            opacity: expItem3Opacity,
+                            transform: `translateY(${expItem3TranslateY}px)`,
+                            transition: 'opacity 0.1s ease, transform 0.1s ease',
+                            visibility: expItem3Opacity === 0 ? 'hidden' : 'visible',
+                            marginBottom: 0
+                          }}
+                        >
+                          <div className="timeline-text-content left-align">
+                            <h3 className="timeline-item-title">Healthcare IT Intern</h3>
+                            <p className="timeline-item-institution">Aravind Eye Hospital, Puducherry</p>
+                            <div className="timeline-item-details" style={{ marginTop: '15px' }}>
+                              <p style={{ margin: 0, color: 'rgba(18, 18, 18, 0.85)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                                Proposed an Aadhaar QR scanning solution to auto-fill patient registration, cutting manual entry time. Mapped healthcare data workflows and identified critical system bottlenecks.
+                              </p>
+                            </div>
+                          </div>
+                          <div className="timeline-center-node blue-theme">
+                            <div className="timeline-dot-inner"></div>
+                          </div>
+                          <div className="timeline-badge-group right-align">
+                            <div className="timeline-connector-line"></div>
+                            <div className="timeline-circle-badge blue-theme">
+                              <img src={asset('/Images/aravind.jpg')} alt="Aravind Eye Hospital" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />                              </div>
+                            <span className="timeline-year">Puducherry, India</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
+                    {/* 3. JOURNEY ENDING FOOTER */}
+                    <div
+                      className="journey-footer"
+                      style={{
+                        opacity: journeyFooterOpacity,
+                        transform: `translateY(${journeyFooterTranslateY}px)`,
+                        transition: 'opacity 0.1s ease, transform 0.1s ease',
+                        visibility: journeyFooterOpacity === 0 ? 'hidden' : 'visible'
+                      }}
+                    >
+                      <div className="footer-top">
+                        <p className="footer-subtitle">THAT'S ALL FOR NOW.</p>
+                        <h2 className="footer-title">Got an opportunity in mind?<br />Let's talk</h2>
+                      </div>
+
+                      <div className="footer-divider-container">
+                        <div className="footer-divider-line"></div>
+                        <button className="footer-get-in-touch-btn" onClick={() => handleNavClick('Contact')}>
+                          Get in touch
+                        </button>
+                      </div>
+
+                      <div className="footer-bottom">
+                        <div className="footer-contact-item">
+                          <span className="footer-contact-label">EMAIL</span>
+                          <a href="mailto:ranjanadevi.180264@gmail.com" className="footer-contact-value">ranjanadevi.180264@gmail.com</a>
+                        </div>
+                        <div className="footer-contact-item">
+                          <span className="footer-contact-label">PHONE</span>
+                          <a href="tel:+919176317764" className="footer-contact-value">(+91) 9176317764</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          ) : activeTab === 'Project' ? (
+            <div className="projects-page-container">
+              <div className="projects-hero-header">
+                <div className="projects-section-tag">
+                  <Sparkles size={14} /> Featured Portfolio
+                </div>
+                <h1 className="projects-main-title">Data Science & AI Engineering</h1>
+                <p className="projects-subtitle">
+                  Selected predictive modeling, business intelligence dashboards, and intelligent search systems engineered with Python, Power BI, and Google Gemini.
+                </p>
+              </div>
+
+              <div className="projects-cards-grid">
+                {/* Project 1: Credit Card Fraud */}
+                <div className="project-card-glass">
+                  <div>
+                    <div className="project-card-top">
+                      <span className="project-category-badge">Data Analytics & Power BI</span>
+                      <TrendingUp size={20} color="#38bdf8" />
+                    </div>
+                    <h3 className="project-card-title">Credit Card Fraud Analysis & Dashboard</h3>
+                    <p className="project-card-desc">
+                      Processed and analyzed 284,807 transactions, conducting Exploratory Data Analysis in Python to surface critical feature anomalies across PCA dimensions (V12, V14, V17) and transaction volume tiers. Built dynamic Power BI dashboards featuring custom DAX measures and cross-filtering down to 3-transaction precision slices.
+                    </p>
+                    <div className="project-metrics-list">
+                      <div className="project-metric-item">
+                        <span className="metric-dot"></span>
+                        <span><strong>284,807</strong> transactions processed & anomaly analyzed</span>
+                      </div>
+                      <div className="project-metric-item">
+                        <span className="metric-dot"></span>
+                        <span>Targeted 3-transaction precision slices via custom DAX</span>
+                      </div>
+                      <div className="project-metric-item">
+                        <span className="metric-dot"></span>
+                        <span>PCA dimension isolation (V12, V14, V17)</span>
+                      </div>
+                    </div>
+                    <div className="project-tags-cloud">
+                      <span className="project-tech-pill">Python</span>
+                      <span className="project-tech-pill">EDA</span>
+                      <span className="project-tech-pill">Power BI</span>
+                      <span className="project-tech-pill">DAX</span>
+                      <span className="project-tech-pill">PCA</span>
+                    </div>
+                  </div>
+                  <div className="project-actions-row">
+                    <a
+                      href="https://github.com/ranjanadevi1802/CreditCard-Fraud-Detection"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-btn-primary"
+                    >
+                      <Github size={16} /> View Code
+                    </a>
+                  </div>
+                </div>
+
+                {/* Project 2: AgroChain */}
+                <div className="project-card-glass">
+                  <div>
+                    <div className="project-card-top">
+                      <span className="project-category-badge project-hackathon-badge">Google Solution Challenge 2026</span>
+                      <Brain size={20} color="#fbbf24" />
+                    </div>
+                    <h3 className="project-card-title">AgroChain — AI Supply Chain Platform</h3>
+                    <p className="project-card-desc">
+                      Developed an AI-driven supply-chain solution to mitigate market price volatility across agricultural buyer networks, competing globally in the Google Solution Challenge 2026 (Google × Hack2Skill). Integrated Gemini LLM and Firebase architecture to deliver sub-second data synchronization and real-time market price evaluation.
+                    </p>
+                    <div className="project-metrics-list">
+                      <div className="project-metric-item">
+                        <span className="metric-dot" style={{ background: '#fbbf24' }}></span>
+                        <span>Global AI Hackathon competitor worldwide</span>
+                      </div>
+                      <div className="project-metric-item">
+                        <span className="metric-dot" style={{ background: '#fbbf24' }}></span>
+                        <span>Sub-second real-time Firebase synchronization</span>
+                      </div>
+                      <div className="project-metric-item">
+                        <span className="metric-dot" style={{ background: '#fbbf24' }}></span>
+                        <span>Google Gemini LLM & Vertex AI market valuation</span>
+                      </div>
+                    </div>
+                    <div className="project-tags-cloud">
+                      <span className="project-tech-pill">Google Gemini</span>
+                      <span className="project-tech-pill">Vertex AI</span>
+                      <span className="project-tech-pill">Flutter</span>
+                      <span className="project-tech-pill">Firebase</span>
+                      <span className="project-tech-pill">LLM</span>
+                    </div>
+                  </div>
+                  <div className="project-actions-row">
+                    <a
+                      href="https://github.com/ranjanadevi1802/AgroChain"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-btn-primary"
+                    >
+                      <Github size={16} /> View Code
+                    </a>
+                  </div>
+                </div>
+
+                {/* Project 3: Support Ticket Search System */}
+                <div className="project-card-glass">
+                  <div>
+                    <div className="project-card-top">
+                      <span className="project-category-badge">Information Retrieval & NLP</span>
+                      <Search size={20} color="#38bdf8" />
+                    </div>
+                    <h3 className="project-card-title">Support Ticket Search Engine</h3>
+                    <p className="project-card-desc">
+                      Architected a Flask-based search engine utilizing TF-IDF vectorization, inverted indexing, and cosine similarity ranking to achieve relevant match retrieval across unstructured ticket datasets. Visualized end-to-end IR pipelines to convert natural language queries into transparent, rank-ordered scoring breakdowns.
+                    </p>
+                    <div className="project-metrics-list">
+                      <div className="project-metric-item">
+                        <span className="metric-dot"></span>
+                        <span>TF-IDF vector space model & inverted index</span>
+                      </div>
+                      <div className="project-metric-item">
+                        <span className="metric-dot"></span>
+                        <span>Cosine similarity ranking across unstructured tickets</span>
+                      </div>
+                      <div className="project-metric-item">
+                        <span className="metric-dot"></span>
+                        <span>Transparent rank-ordered pipeline scoring</span>
+                      </div>
+                    </div>
+                    <div className="project-tags-cloud">
+                      <span className="project-tech-pill">Python</span>
+                      <span className="project-tech-pill">Flask</span>
+                      <span className="project-tech-pill">TF-IDF</span>
+                      <span className="project-tech-pill">NLP</span>
+                      <span className="project-tech-pill">Information Retrieval</span>
+                    </div>
+                  </div>
+                  <div className="project-actions-row">
+                    <a
+                      href="https://github.com/ranjanadevi1802/support-ticket-search"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-btn-primary"
+                    >
+                      <Github size={16} /> View Code
+                    </a>
                   </div>
                 </div>
               </div>
-              ) : activeTab === 'Project' ? (
-              <div className="projects-page-container">
-                <div className="projects-hero-header">
-                  <div className="projects-section-tag">
-                    <Sparkles size={14} /> Featured Portfolio
-                  </div>
-                  <h1 className="projects-main-title">Data Science & AI Engineering</h1>
-                  <p className="projects-subtitle">
-                    Selected predictive modeling, business intelligence dashboards, and intelligent search systems engineered with Python, Power BI, and Google Gemini.
-                  </p>
+            </div>
+          ) : activeTab === 'Resume' ? (
+            <div className="resume-page-container">
+              <div className="resume-header-bar">
+                <div className="resume-header-info">
+                  <h1>Curriculum Vitae</h1>
+                  <p>Ranjana Devi K • B.Tech Information Science Engineering (9.12 CGPA)</p>
                 </div>
-
-                <div className="projects-cards-grid">
-                  {/* Project 1: Credit Card Fraud */}
-                  <div className="project-card-glass">
-                    <div>
-                      <div className="project-card-top">
-                        <span className="project-category-badge">Data Analytics & Power BI</span>
-                        <TrendingUp size={20} color="#38bdf8" />
-                      </div>
-                      <h3 className="project-card-title">Credit Card Fraud Analysis & Dashboard</h3>
-                      <p className="project-card-desc">
-                        Processed and analyzed 284,807 transactions, conducting Exploratory Data Analysis in Python to surface critical feature anomalies across PCA dimensions (V12, V14, V17) and transaction volume tiers. Built dynamic Power BI dashboards featuring custom DAX measures and cross-filtering down to 3-transaction precision slices.
-                      </p>
-                      <div className="project-metrics-list">
-                        <div className="project-metric-item">
-                          <span className="metric-dot"></span>
-                          <span><strong>284,807</strong> transactions processed & anomaly analyzed</span>
-                        </div>
-                        <div className="project-metric-item">
-                          <span className="metric-dot"></span>
-                          <span>Targeted 3-transaction precision slices via custom DAX</span>
-                        </div>
-                        <div className="project-metric-item">
-                          <span className="metric-dot"></span>
-                          <span>PCA dimension isolation (V12, V14, V17)</span>
-                        </div>
-                      </div>
-                      <div className="project-tags-cloud">
-                        <span className="project-tech-pill">Python</span>
-                        <span className="project-tech-pill">EDA</span>
-                        <span className="project-tech-pill">Power BI</span>
-                        <span className="project-tech-pill">DAX</span>
-                        <span className="project-tech-pill">PCA</span>
-                      </div>
-                    </div>
-                    <div className="project-actions-row">
-                      <a
-                        href="https://github.com/ranjanadevi1802/CreditCard-Fraud-Detection"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-btn-primary"
-                      >
-                        <Github size={16} /> View Code
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Project 2: AgroChain */}
-                  <div className="project-card-glass">
-                    <div>
-                      <div className="project-card-top">
-                        <span className="project-category-badge project-hackathon-badge">Google Solution Challenge 2026</span>
-                        <Brain size={20} color="#fbbf24" />
-                      </div>
-                      <h3 className="project-card-title">AgroChain — AI Supply Chain Platform</h3>
-                      <p className="project-card-desc">
-                        Developed an AI-driven supply-chain solution to mitigate market price volatility across agricultural buyer networks, competing globally in the Google Solution Challenge 2026 (Google × Hack2Skill). Integrated Gemini LLM and Firebase architecture to deliver sub-second data synchronization and real-time market price evaluation.
-                      </p>
-                      <div className="project-metrics-list">
-                        <div className="project-metric-item">
-                          <span className="metric-dot" style={{ background: '#fbbf24' }}></span>
-                          <span>Global AI Hackathon competitor worldwide</span>
-                        </div>
-                        <div className="project-metric-item">
-                          <span className="metric-dot" style={{ background: '#fbbf24' }}></span>
-                          <span>Sub-second real-time Firebase synchronization</span>
-                        </div>
-                        <div className="project-metric-item">
-                          <span className="metric-dot" style={{ background: '#fbbf24' }}></span>
-                          <span>Google Gemini LLM & Vertex AI market valuation</span>
-                        </div>
-                      </div>
-                      <div className="project-tags-cloud">
-                        <span className="project-tech-pill">Google Gemini</span>
-                        <span className="project-tech-pill">Vertex AI</span>
-                        <span className="project-tech-pill">Flutter</span>
-                        <span className="project-tech-pill">Firebase</span>
-                        <span className="project-tech-pill">LLM</span>
-                      </div>
-                    </div>
-                    <div className="project-actions-row">
-                      <a
-                        href="https://github.com/ranjanadevi1802/AgroChain"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-btn-primary"
-                      >
-                        <Github size={16} /> View Code
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Project 3: Support Ticket Search System */}
-                  <div className="project-card-glass">
-                    <div>
-                      <div className="project-card-top">
-                        <span className="project-category-badge">Information Retrieval & NLP</span>
-                        <Search size={20} color="#38bdf8" />
-                      </div>
-                      <h3 className="project-card-title">Support Ticket Search Engine</h3>
-                      <p className="project-card-desc">
-                        Architected a Flask-based search engine utilizing TF-IDF vectorization, inverted indexing, and cosine similarity ranking to achieve relevant match retrieval across unstructured ticket datasets. Visualized end-to-end IR pipelines to convert natural language queries into transparent, rank-ordered scoring breakdowns.
-                      </p>
-                      <div className="project-metrics-list">
-                        <div className="project-metric-item">
-                          <span className="metric-dot"></span>
-                          <span>TF-IDF vector space model & inverted index</span>
-                        </div>
-                        <div className="project-metric-item">
-                          <span className="metric-dot"></span>
-                          <span>Cosine similarity ranking across unstructured tickets</span>
-                        </div>
-                        <div className="project-metric-item">
-                          <span className="metric-dot"></span>
-                          <span>Transparent rank-ordered pipeline scoring</span>
-                        </div>
-                      </div>
-                      <div className="project-tags-cloud">
-                        <span className="project-tech-pill">Python</span>
-                        <span className="project-tech-pill">Flask</span>
-                        <span className="project-tech-pill">TF-IDF</span>
-                        <span className="project-tech-pill">NLP</span>
-                        <span className="project-tech-pill">Information Retrieval</span>
-                      </div>
-                    </div>
-                    <div className="project-actions-row">
-                      <a
-                        href="https://github.com/ranjanadevi1802/support-ticket-search"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-btn-primary"
-                      >
-                        <Github size={16} /> View Code
-                      </a>
-                    </div>
-                  </div>
+                <div className="resume-action-btns">
+                  <a
+                    href={asset('/RanjanaDevi_Resume.pdf')}
+                    download="RanjanaDevi_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resume-download-btn"
+                  >
+                    <Download size={18} /> Download Resume
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resume-outline-btn"
+                  >
+                    <Linkedin size={18} /> LinkedIn Profile
+                  </a>
+                  <a
+                    href="https://leetcode.com/u/Ranjana_18/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="resume-outline-btn"
+                  >
+                    <Code size={18} /> LeetCode Profile
+                  </a>
                 </div>
               </div>
-              ) : activeTab === 'Resume' ? (
-              <div className="resume-page-container">
-                <div className="resume-header-bar">
-                  <div className="resume-header-info">
-                    <h1>Curriculum Vitae</h1>
-                    <p>Ranjana Devi K • B.Tech Information Science Engineering (9.12 CGPA)</p>
-                  </div>
-                  <div className="resume-action-btns">
-                    <a
-                      href={asset('/RanjanaDevi_Resume.pdf')}
-                      download="RanjanaDevi_Resume.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="resume-download-btn"
-                    >
-                      <Download size={18} /> Download Resume
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="resume-outline-btn"
-                    >
-                      <Linkedin size={18} /> LinkedIn Profile
-                    </a>
-                    <a
-                      href="https://leetcode.com/u/Ranjana_18/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="resume-outline-btn"
-                    >
-                      <Code size={18} /> LeetCode Profile
-                    </a>
-                  </div>
-                </div>
 
-                <div className="resume-sheet-card">
-                  <div className="resume-two-col-grid">
-                    {/* Left Column */}
-                    <div className="resume-sidebar-col">
-                      <div>
-                        <h3 className="resume-section-heading">Contact Information</h3>
-                        <div className="resume-contact-item">
-                          <Mail size={16} color="#38bdf8" />
-                          <a href="mailto:ranjanadevi.180264@gmail.com">ranjanadevi.180264@gmail.com</a>
-                        </div>
-                        <div className="resume-contact-item">
-                          <Phone size={16} color="#38bdf8" />
-                          <a href="tel:+919176317764">+91 9176317764</a>
-                        </div>
-                        <div className="resume-contact-item">
-                          <MapPin size={16} color="#38bdf8" />
-                          <span>Puducherry, India</span>
-                        </div>
-                        <div className="resume-contact-item">
-                          <Github size={16} color="#38bdf8" />
-                          <a href="https://github.com/ranjanadevi1802" target="_blank" rel="noreferrer">github.com/ranjanadevi1802</a>
-                        </div>
-                        <div className="resume-contact-item">
-                          <Linkedin size={16} color="#38bdf8" />
-                          <a href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" target="_blank" rel="noreferrer">linkedin.com/in/ranjana-devi-k</a>
-                        </div>
+              <div className="resume-sheet-card">
+                <div className="resume-two-col-grid">
+                  {/* Left Column */}
+                  <div className="resume-sidebar-col">
+                    <div>
+                      <h3 className="resume-section-heading">Contact Information</h3>
+                      <div className="resume-contact-item">
+                        <Mail size={16} color="#38bdf8" />
+                        <a href="mailto:ranjanadevi.180264@gmail.com">ranjanadevi.180264@gmail.com</a>
                       </div>
-
-                      <div>
-                        <h3 className="resume-section-heading">Technical Skills</h3>
-                        <div className="resume-skill-group">
-                          <h4>Languages</h4>
-                          <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem' }}>Python, C, Java, SQL</p>
-                        </div>
-                        <div className="resume-skill-group">
-                          <h4>Libraries & Frameworks</h4>
-                          <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem' }}>Flask, Pandas, NumPy, scikit-learn</p>
-                        </div>
-                        <div className="resume-skill-group">
-                          <h4>Tools & Platforms</h4>
-                          <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem' }}>Power BI, DAX, GitHub, VS Code, Firebase, Vertex AI, Canva</p>
-                        </div>
-                        <div className="resume-skill-group">
-                          <h4>Core CS Concepts</h4>
-                          <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem' }}>DSA, OOP, DBMS, Information Retrieval, AI/ML Fundamentals, Agentic AI</p>
-                        </div>
+                      <div className="resume-contact-item">
+                        <Phone size={16} color="#38bdf8" />
+                        <a href="tel:+919176317764">+91 9176317764</a>
                       </div>
+                      <div className="resume-contact-item">
+                        <MapPin size={16} color="#38bdf8" />
+                        <span>Puducherry, India</span>
+                      </div>
+                      <div className="resume-contact-item">
+                        <Github size={16} color="#38bdf8" />
+                        <a href="https://github.com/ranjanadevi1802" target="_blank" rel="noreferrer">github.com/ranjanadevi1802</a>
+                      </div>
+                      <div className="resume-contact-item">
+                        <Linkedin size={16} color="#38bdf8" />
+                        <a href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" target="_blank" rel="noreferrer">linkedin.com/in/ranjana-devi-k</a>
+                      </div>
+                    </div>
 
-                      <div>
-                        <h3 className="resume-section-heading">Leadership & Community</h3>
+                    <div>
+                      <h3 className="resume-section-heading">Technical Skills</h3>
+                      <div className="resume-skill-group">
+                        <h4>Languages</h4>
+                        <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem' }}>Python, C, Java, SQL</p>
+                      </div>
+                      <div className="resume-skill-group">
+                        <h4>Libraries & Frameworks</h4>
+                        <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem' }}>Flask, Pandas, NumPy, scikit-learn</p>
+                      </div>
+                      <div className="resume-skill-group">
+                        <h4>Tools & Platforms</h4>
+                        <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem' }}>Power BI, DAX, GitHub, VS Code, Firebase, Vertex AI, Canva</p>
+                      </div>
+                      <div className="resume-skill-group">
+                        <h4>Core CS Concepts</h4>
+                        <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.85rem' }}>DSA, OOP, DBMS, Information Retrieval, AI/ML Fundamentals, Agentic AI</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="resume-section-heading">Leadership & Community</h3>
+                      <ul className="resume-entry-bullets">
+                        <li>Student Placement Coordinator</li>
+                        <li>Hackathon and Innovation Club Member</li>
+                        <li>Tech Wizard Club Member</li>
+                        <li>Conducted workshop on Git & GitHub tools for juniors</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Right Column */}
+                  <div className="resume-main-col">
+                    <div>
+                      <h3 className="resume-section-heading">Summary</h3>
+                      <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.92rem', lineHeight: '1.7' }}>
+                        Data Analytics & AI Engineering student with a <strong>9.12 CGPA</strong>, hands-on experience in statistical modeling and machine learning workflows, and a track record of building end-to-end data-driven solutions. Designed and deployed predictive systems including an AI-powered agricultural transparency platform using Google Gemini and Vertex AI, alongside customized vector search engines.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="resume-section-heading">Internships & Research</h3>
+                      <div className="resume-timeline-entry">
+                        <div className="resume-entry-header">
+                          <span className="resume-entry-title">Indian Institute of Science (IISc)</span>
+                          <span className="resume-entry-date">June 2026 – July 2026</span>
+                        </div>
+                        <div className="resume-entry-sub">Data & Research Intern • Bengaluru, India</div>
                         <ul className="resume-entry-bullets">
-                          <li>Student Placement Coordinator</li>
-                          <li>Hackathon and Innovation Club Member</li>
-                          <li>Tech Wizard Club Member</li>
-                          <li>Conducted workshop on Git & GitHub tools for juniors</li>
+                          <li>Programmed graphical algorithm simulations in Python for Numerical Analysis (Newton's method, fixed points, piecewise interpolation) under Prof. Thirupathi Gudi to model non-linear functional convergence.</li>
+                          <li>Conducted statistical research and presented QSAR (Quantitative Structure-Activity Relationship) predictive models for drug discovery to Principal Research Scientist Dr. Sathishkumar Ranganathan.</li>
+                        </ul>
+                      </div>
+
+                      <div className="resume-timeline-entry">
+                        <div className="resume-entry-header">
+                          <span className="resume-entry-title">Deloitte Virtual Internship</span>
+                          <span className="resume-entry-date">2025</span>
+                        </div>
+                        <div className="resume-entry-sub">Data Analytics • Remote (Forage Platform)</div>
+                        <ul className="resume-entry-bullets">
+                          <li>Cleaned, analysed, and visualised real-world client datasets to simulate a professional analytics engagement.</li>
+                          <li>Built insight dashboards using Python, producing actionable business recommendations and stakeholder-ready reports.</li>
+                        </ul>
+                      </div>
+
+                      <div className="resume-timeline-entry">
+                        <div className="resume-entry-header">
+                          <span className="resume-entry-title">Aravind Eye Hospital</span>
+                          <span className="resume-entry-date">Puducherry, India</span>
+                        </div>
+                        <div className="resume-entry-sub">Healthcare IT Intern</div>
+                        <ul className="resume-entry-bullets">
+                          <li>Proposed an Aadhaar QR scanning solution to auto-fill patient registration, cutting manual entry time.</li>
+                          <li>Mapped healthcare data workflows and identified critical bottlenecks in hospital information systems.</li>
                         </ul>
                       </div>
                     </div>
 
-                    {/* Right Column */}
-                    <div className="resume-main-col">
-                      <div>
-                        <h3 className="resume-section-heading">Summary</h3>
-                        <p style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.92rem', lineHeight: '1.7' }}>
-                          Data Analytics & AI Engineering student with a <strong>9.12 CGPA</strong>, hands-on experience in statistical modeling and machine learning workflows, and a track record of building end-to-end data-driven solutions. Designed and deployed predictive systems including an AI-powered agricultural transparency platform using Google Gemini and Vertex AI, alongside customized vector search engines.
-                        </p>
+                    <div>
+                      <h3 className="resume-section-heading">Education</h3>
+                      <div className="resume-timeline-entry">
+                        <div className="resume-entry-header">
+                          <span className="resume-entry-title">Women's Engineering College, Puducherry</span>
+                          <span className="resume-entry-date">Expected 2027</span>
+                        </div>
+                        <div className="resume-entry-sub">B.Tech Information Science Engineering • <strong>CGPA: 9.12 / 10.00</strong></div>
                       </div>
-
-                      <div>
-                        <h3 className="resume-section-heading">Internships & Research</h3>
-                        <div className="resume-timeline-entry">
-                          <div className="resume-entry-header">
-                            <span className="resume-entry-title">Indian Institute of Science (IISc)</span>
-                            <span className="resume-entry-date">June 2026 – July 2026</span>
-                          </div>
-                          <div className="resume-entry-sub">Data & Research Intern • Bengaluru, India</div>
-                          <ul className="resume-entry-bullets">
-                            <li>Programmed graphical algorithm simulations in Python for Numerical Analysis (Newton's method, fixed points, piecewise interpolation) under Prof. Thirupathi Gudi to model non-linear functional convergence.</li>
-                            <li>Conducted statistical research and presented QSAR (Quantitative Structure-Activity Relationship) predictive models for drug discovery to Principal Research Scientist Dr. Sathishkumar Ranganathan.</li>
-                          </ul>
+                      <div className="resume-timeline-entry">
+                        <div className="resume-entry-header">
+                          <span className="resume-entry-title">Aditya Vidyashram, Puducherry</span>
+                          <span className="resume-entry-date">2022 – 2023</span>
                         </div>
-
-                        <div className="resume-timeline-entry">
-                          <div className="resume-entry-header">
-                            <span className="resume-entry-title">Deloitte Virtual Internship</span>
-                            <span className="resume-entry-date">2025</span>
-                          </div>
-                          <div className="resume-entry-sub">Data Analytics • Remote (Forage Platform)</div>
-                          <ul className="resume-entry-bullets">
-                            <li>Cleaned, analysed, and visualised real-world client datasets to simulate a professional analytics engagement.</li>
-                            <li>Built insight dashboards using Python, producing actionable business recommendations and stakeholder-ready reports.</li>
-                          </ul>
-                        </div>
-
-                        <div className="resume-timeline-entry">
-                          <div className="resume-entry-header">
-                            <span className="resume-entry-title">Aravind Eye Hospital</span>
-                            <span className="resume-entry-date">Puducherry, India</span>
-                          </div>
-                          <div className="resume-entry-sub">Healthcare IT Intern</div>
-                          <ul className="resume-entry-bullets">
-                            <li>Proposed an Aadhaar QR scanning solution to auto-fill patient registration, cutting manual entry time.</li>
-                            <li>Mapped healthcare data workflows and identified critical bottlenecks in hospital information systems.</li>
-                          </ul>
-                        </div>
+                        <div className="resume-entry-sub">Class XII (CBSE) • <strong>81%</strong></div>
                       </div>
-
-                      <div>
-                        <h3 className="resume-section-heading">Education</h3>
-                        <div className="resume-timeline-entry">
-                          <div className="resume-entry-header">
-                            <span className="resume-entry-title">Women's Engineering College, Puducherry</span>
-                            <span className="resume-entry-date">Expected 2027</span>
-                          </div>
-                          <div className="resume-entry-sub">B.Tech Information Science Engineering • <strong>CGPA: 9.12 / 10.00</strong></div>
+                      <div className="resume-timeline-entry">
+                        <div className="resume-entry-header">
+                          <span className="resume-entry-title">Aditya Vidyashram, Puducherry</span>
+                          <span className="resume-entry-date">2020 – 2021</span>
                         </div>
-                        <div className="resume-timeline-entry">
-                          <div className="resume-entry-header">
-                            <span className="resume-entry-title">Aditya Vidyashram, Puducherry</span>
-                            <span className="resume-entry-date">2022 – 2023</span>
-                          </div>
-                          <div className="resume-entry-sub">Class XII (CBSE) • <strong>81%</strong></div>
-                        </div>
-                        <div className="resume-timeline-entry">
-                          <div className="resume-entry-header">
-                            <span className="resume-entry-title">Aditya Vidyashram, Puducherry</span>
-                            <span className="resume-entry-date">2020 – 2021</span>
-                          </div>
-                          <div className="resume-entry-sub">Class X (CBSE) • <strong>87%</strong></div>
-                        </div>
+                        <div className="resume-entry-sub">Class X (CBSE) • <strong>87%</strong></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              ) : activeTab === 'Contact' ? (
-              <div className="contact-page-container" onMouseMove={handleContactMouseMove}>
-                <div className="contact-mouse-glow" ref={contactGlowRef}></div>
-                <div className="contact-card-wrapper">
-                  {/* Left Side: Contact Info Panel */}
-                  <div className="contact-info-panel">
-                    <h2 className="contact-info-title stagger-fade-in" style={{ animationDelay: '0.2s' }}>Let's Connect & Collaborate</h2>
-                    <p className="contact-info-desc stagger-fade-in" style={{ animationDelay: '0.3s' }}>
-                      Whether you have an internship opportunity, a data science project, or want to discuss machine learning, I'd love to hear from you.
-                    </p>
+            </div>
+          ) : activeTab === 'Contact' ? (
+            <div className="contact-page-container" onMouseMove={handleContactMouseMove}>
+              <div className="contact-mouse-glow" ref={contactGlowRef}></div>
+              <div className="contact-card-wrapper">
+                {/* Left Side: Contact Info Panel */}
+                <div className="contact-info-panel">
+                  <h2 className="contact-info-title stagger-fade-in" style={{ animationDelay: '0.2s' }}>Let's Connect & Collaborate</h2>
+                  <p className="contact-info-desc stagger-fade-in" style={{ animationDelay: '0.3s' }}>
+                    Whether you have an internship opportunity, a data science project, or want to discuss machine learning, I'd love to hear from you.
+                  </p>
 
-                    <div className="contact-info-block stagger-fade-in" style={{ animationDelay: '0.4s' }}>
-                      <div className="contact-icon-circle">
-                        <Mail size={20} />
-                      </div>
-                      <div className="contact-info-text">
-                        <span className="contact-info-label">EMAIL ME</span>
-                        <a href="mailto:ranjanadevi.180264@gmail.com" className="contact-info-value">
-                          ranjanadevi.180264@gmail.com
-                        </a>
-                      </div>
+                  <div className="contact-info-block stagger-fade-in" style={{ animationDelay: '0.4s' }}>
+                    <div className="contact-icon-circle">
+                      <Mail size={20} />
                     </div>
-
-                    <div className="contact-info-block stagger-fade-in" style={{ animationDelay: '0.45s' }}>
-                      <div className="contact-icon-circle">
-                        <Phone size={20} />
-                      </div>
-                      <div className="contact-info-text">
-                        <span className="contact-info-label">PHONE</span>
-                        <a href="tel:+919176317764" className="contact-info-value">
-                          (+91) 9176317764
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="contact-info-block stagger-fade-in" style={{ animationDelay: '0.48s' }}>
-                      <div className="contact-icon-circle">
-                        <MapPin size={20} />
-                      </div>
-                      <div className="contact-info-text">
-                        <span className="contact-info-label">LOCATION</span>
-                        <span className="contact-info-value">
-                          Puducherry, India
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="contact-follow-block stagger-fade-in" style={{ animationDelay: '0.5s' }}>
-                      <span className="contact-follow-label">PROFILES & WORK</span>
-                      <div className="contact-social-row">
-                        <a href="https://github.com/ranjanadevi1802" target="_blank" rel="noopener noreferrer" className="social-icon-circle" title="GitHub">
-                          <Github size={18} />
-                        </a>
-                        <a href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" target="_blank" rel="noopener noreferrer" className="social-icon-circle" title="LinkedIn">
-                          <Linkedin size={18} />
-                        </a>
-                        <a href="https://leetcode.com/u/Ranjana_18/" target="_blank" rel="noopener noreferrer" className="social-icon-circle" title="LeetCode">
-                          <Code size={18} />
-                        </a>
-                      </div>
+                    <div className="contact-info-text">
+                      <span className="contact-info-label">EMAIL ME</span>
+                      <a href="mailto:ranjanadevi.180264@gmail.com" className="contact-info-value">
+                        ranjanadevi.180264@gmail.com
+                      </a>
                     </div>
                   </div>
 
-                  {/* Right Side: Contact Form Panel */}
-                  <div className="contact-form-panel">
-                    {!contactIsSent ? (
-                      <form
-                        className="contact-split-form"
-                        onSubmit={async (e) => {
-                          e.preventDefault()
-                          if (contactName.trim() && contactEmail.trim() && contactSubject.trim() && contactMessage.trim()) {
-                            setIsSubmitting(true)
-                            try {
-                              const res = await fetch("https://api.web3forms.com/submit", {
-                                method: "POST",
-                                headers: {
-                                  "Content-Type": "application/json",
-                                  Accept: "application/json",
-                                },
-                                body: JSON.stringify({
-                                  access_key: "e0dec84b-4cf2-402f-b3d1-4cedc5c280e2",
-                                  name: contactName,
-                                  email: contactEmail,
-                                  subject: contactSubject,
-                                  message: contactMessage,
-                                }),
-                              })
-                              const result = await res.json()
-                              if (result.success) {
-                                setContactIsSent(true)
-                              } else {
-                                // Fallback direct mailto if key is expired/unregistered
-                                window.location.href = `mailto:ranjanadevi.180264@gmail.com?subject=${encodeURIComponent(contactSubject)}&body=${encodeURIComponent("From: " + contactName + " (" + contactEmail + ")\n\n" + contactMessage)}`
-                                setContactIsSent(true)
-                              }
-                            } catch (error) {
-                              console.error(error)
+                  <div className="contact-info-block stagger-fade-in" style={{ animationDelay: '0.45s' }}>
+                    <div className="contact-icon-circle">
+                      <Phone size={20} />
+                    </div>
+                    <div className="contact-info-text">
+                      <span className="contact-info-label">PHONE</span>
+                      <a href="tel:+919176317764" className="contact-info-value">
+                        (+91) 9176317764
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="contact-info-block stagger-fade-in" style={{ animationDelay: '0.48s' }}>
+                    <div className="contact-icon-circle">
+                      <MapPin size={20} />
+                    </div>
+                    <div className="contact-info-text">
+                      <span className="contact-info-label">LOCATION</span>
+                      <span className="contact-info-value">
+                        Puducherry, India
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="contact-follow-block stagger-fade-in" style={{ animationDelay: '0.5s' }}>
+                    <span className="contact-follow-label">PROFILES & WORK</span>
+                    <div className="contact-social-row">
+                      <a href="https://github.com/ranjanadevi1802" target="_blank" rel="noopener noreferrer" className="social-icon-circle" title="GitHub">
+                        <Github size={18} />
+                      </a>
+                      <a href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" target="_blank" rel="noopener noreferrer" className="social-icon-circle" title="LinkedIn">
+                        <Linkedin size={18} />
+                      </a>
+                      <a href="https://leetcode.com/u/Ranjana_18/" target="_blank" rel="noopener noreferrer" className="social-icon-circle" title="LeetCode">
+                        <Code size={18} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side: Contact Form Panel */}
+                <div className="contact-form-panel">
+                  {!contactIsSent ? (
+                    <form
+                      className="contact-split-form"
+                      onSubmit={async (e) => {
+                        e.preventDefault()
+                        if (contactName.trim() && contactEmail.trim() && contactSubject.trim() && contactMessage.trim()) {
+                          setIsSubmitting(true)
+                          try {
+                            const res = await fetch("https://api.web3forms.com/submit", {
+                              method: "POST",
+                              headers: {
+                                "Content-Type": "application/json",
+                                Accept: "application/json",
+                              },
+                              body: JSON.stringify({
+                                access_key: "e0dec84b-4cf2-402f-b3d1-4cedc5c280e2",
+                                name: contactName,
+                                email: contactEmail,
+                                subject: contactSubject,
+                                message: contactMessage,
+                              }),
+                            })
+                            const result = await res.json()
+                            if (result.success) {
+                              setContactIsSent(true)
+                            } else {
+                              // Fallback direct mailto if key is expired/unregistered
                               window.location.href = `mailto:ranjanadevi.180264@gmail.com?subject=${encodeURIComponent(contactSubject)}&body=${encodeURIComponent("From: " + contactName + " (" + contactEmail + ")\n\n" + contactMessage)}`
                               setContactIsSent(true)
-                            } finally {
-                              setIsSubmitting(false)
                             }
+                          } catch (error) {
+                            console.error(error)
+                            window.location.href = `mailto:ranjanadevi.180264@gmail.com?subject=${encodeURIComponent(contactSubject)}&body=${encodeURIComponent("From: " + contactName + " (" + contactEmail + ")\n\n" + contactMessage)}`
+                            setContactIsSent(true)
+                          } finally {
+                            setIsSubmitting(false)
                           }
-                        }}
-                      >
-                        <div className="form-row-half">
-                          <div className="form-group stagger-fade-in" style={{ animationDelay: '0.3s' }}>
-                            <label className="form-label">Name</label>
-                            <input
-                              type="text"
-                              className="form-input-field"
-                              placeholder="Your Name"
-                              value={contactName}
-                              onChange={(e) => setContactName(e.target.value)}
-                              required
-                            />
-                          </div>
-                          <div className="form-group stagger-fade-in" style={{ animationDelay: '0.4s' }}>
-                            <label className="form-label">Email</label>
-                            <input
-                              type="email"
-                              className="form-input-field"
-                              placeholder="your.email@example.com"
-                              value={contactEmail}
-                              onChange={(e) => setContactEmail(e.target.value)}
-                              required
-                            />
-                          </div>
-                        </div>
-
-                        <div className="form-group full-width stagger-fade-in" style={{ animationDelay: '0.5s' }}>
-                          <label className="form-label">Subject</label>
+                        }
+                      }}
+                    >
+                      <div className="form-row-half">
+                        <div className="form-group stagger-fade-in" style={{ animationDelay: '0.3s' }}>
+                          <label className="form-label">Name</label>
                           <input
                             type="text"
                             className="form-input-field"
-                            placeholder="Internship / Project Discussion"
-                            value={contactSubject}
-                            onChange={(e) => setContactSubject(e.target.value)}
+                            placeholder="Your Name"
+                            value={contactName}
+                            onChange={(e) => setContactName(e.target.value)}
                             required
                           />
                         </div>
-
-                        <div className="form-group full-width stagger-fade-in" style={{ animationDelay: '0.6s' }}>
-                          <label className="form-label">Message</label>
-                          <textarea
-                            className="form-input-field form-textarea-field"
-                            placeholder="Tell me about your opportunity or project..."
-                            value={contactMessage}
-                            onChange={(e) => setContactMessage(e.target.value)}
+                        <div className="form-group stagger-fade-in" style={{ animationDelay: '0.4s' }}>
+                          <label className="form-label">Email</label>
+                          <input
+                            type="email"
+                            className="form-input-field"
+                            placeholder="your.email@example.com"
+                            value={contactEmail}
+                            onChange={(e) => setContactEmail(e.target.value)}
                             required
-                          ></textarea>
-                        </div>
-
-                        <button type="submit" className="contact-submit-btn stagger-fade-in" style={{ animationDelay: '0.7s' }} disabled={isSubmitting}>
-                          <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
-                          {!isSubmitting && (
-                            <svg viewBox="0 0 24 24" className="icon-svg-plane">
-                              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor" />
-                            </svg>
-                          )}
-                        </button>
-                      </form>
-                    ) : (
-                      <div className="contact-success-view">
-                        <div className="success-icon-badge">
-                          <CheckCircle2 size={36} color="#38bdf8" />
-                        </div>
-                        <h3 className="success-title">Message Transmitted!</h3>
-                        <p className="success-desc">
-                          Thank you, <strong>{contactName}</strong>! Your message regarding <em>"{contactSubject}"</em> has been received. I will respond to <strong>{contactEmail}</strong> as soon as possible.
-                        </p>
-                        <button
-                          className="success-reset-btn"
-                          onClick={() => {
-                            setContactName('')
-                            setContactEmail('')
-                            setContactSubject('')
-                            setContactMessage('')
-                            setContactIsSent(false)
-                          }}
-                        >
-                          Send Another Message
-                        </button>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-              ) : (
-              <div className="home-scroll-track" onScroll={(e) => setHomeScrollTop(e.target.scrollTop)}>
-                <div className="home-sticky-viewport">
-
-                  {/* The Cinematic Container */}
-                  <div className="center-container" style={{ opacity: homeMainOpacity, transition: 'opacity 0.2s ease-out' }}>
-                    <div className="background-ticker-container" style={{ transform: `scale(${homeTickerScale})`, transformOrigin: 'center center', marginTop: '-12vh', transition: 'transform 0.2s ease-out' }}>
-                      <div className="background-ticker ticker-left">
-                        <div className="ticker-track">
-                          <span className="ticker-item color-white">DATA ANALYST</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-black">AI ENGINEER</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-white">MACHINE LEARNING</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-black">DATA SCIENTIST</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-white">UI/UX DESIGNER</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-black">DATA ANALYST</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-white">AI ENGINEER</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-black">MACHINE LEARNING</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-white">DATA SCIENTIST</span>
-                          <span className="ticker-bullet">•</span>
+                          />
                         </div>
                       </div>
-                      <div className="background-ticker ticker-right">
-                        <div className="ticker-track">
-                          <span className="ticker-item color-black">DATA ANALYST</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-white">AI ENGINEER</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-black">MACHINE LEARNING</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-white">DATA SCIENTIST</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-black">UI/UX DESIGNER</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-white">DATA ANALYST</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-black">AI ENGINEER</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-white">MACHINE LEARNING</span>
-                          <span className="ticker-bullet">•</span>
-                          <span className="ticker-item color-black">DATA SCIENTIST</span>
-                          <span className="ticker-bullet">•</span>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div className="animate-fade-in-up" style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: 0, zIndex: 10 }}>
-                      <img
-                        src={asset('/Images/home.png')}
-                        alt="Ranjana Devi K"
-                        className="centered-image"
-                        style={{
-                          opacity: homeImageOpacity,
-                          transform: `scale(${homeImageScale}) translateY(${homeImageTranslateY}px)`,
-                          transformOrigin: 'bottom center',
-                          transition: 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
-                        }}
-                      />
-                    </div>
-                  </div>
-
-                  {/* The About Canvas (3-Column Layout) */}
-                  <div
-                    className="about-split-layout"
-                    style={{
-                      opacity: aboutImageOpacity,
-                      pointerEvents: aboutImageOpacity > 0 ? 'auto' : 'none',
-                      transition: 'opacity 0.2s ease-out',
-                      transform: `translateY(${50 * (1 - aboutImageOpacity)}px)`
-                    }}
-                  >
-                    {/* LEFT COLUMN */}
-                    <div className="about-content-left">
-                      <div className="about-section-label" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                        ABOUT ME <span className="label-line"></span>
+                      <div className="form-group full-width stagger-fade-in" style={{ animationDelay: '0.5s' }}>
+                        <label className="form-label">Subject</label>
+                        <input
+                          type="text"
+                          className="form-input-field"
+                          placeholder="Internship / Project Discussion"
+                          value={contactSubject}
+                          onChange={(e) => setContactSubject(e.target.value)}
+                          required
+                        />
                       </div>
 
-                      <h1 className="about-name-title" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>Ranjana<br />Devi K</h1>
+                      <div className="form-group full-width stagger-fade-in" style={{ animationDelay: '0.6s' }}>
+                        <label className="form-label">Message</label>
+                        <textarea
+                          className="form-input-field form-textarea-field"
+                          placeholder="Tell me about your opportunity or project..."
+                          value={contactMessage}
+                          onChange={(e) => setContactMessage(e.target.value)}
+                          required
+                        ></textarea>
+                      </div>
 
-                      <h3 className="about-subtitle" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>AI Engineer • Data Analytics Specialist • ML Researcher</h3>
-
-                      <p className="about-description" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                        Data Analytics & AI Engineering student with a 9.12 CGPA, hands-on experience in statistical modeling and machine learning workflows, and a track record of building end-to-end data-driven solutions. Experienced in deploying predictive systems with Google Gemini, Vertex AI, custom vector search engines, and exploratory data analysis.
+                      <button type="submit" className="contact-submit-btn stagger-fade-in" style={{ animationDelay: '0.7s' }} disabled={isSubmitting}>
+                        <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
+                        {!isSubmitting && (
+                          <svg viewBox="0 0 24 24" className="icon-svg-plane">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor" />
+                          </svg>
+                        )}
+                      </button>
+                    </form>
+                  ) : (
+                    <div className="contact-success-view">
+                      <div className="success-icon-badge">
+                        <CheckCircle2 size={36} color="#38bdf8" />
+                      </div>
+                      <h3 className="success-title">Message Transmitted!</h3>
+                      <p className="success-desc">
+                        Thank you, <strong>{contactName}</strong>! Your message regarding <em>"{contactSubject}"</em> has been received. I will respond to <strong>{contactEmail}</strong> as soon as possible.
                       </p>
+                      <button
+                        className="success-reset-btn"
+                        onClick={() => {
+                          setContactName('')
+                          setContactEmail('')
+                          setContactSubject('')
+                          setContactMessage('')
+                          setContactIsSent(false)
+                        }}
+                      >
+                        Send Another Message
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="home-scroll-track" onScroll={(e) => setHomeScrollTop(e.target.scrollTop)}>
+              <div className="home-sticky-viewport">
 
-                      <div className="about-action-row" style={{ opacity: stagger3, transform: `translateY(${20 * (1 - stagger3)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                        <button className="btn-dark" onClick={() => handleNavClick('Project')}>
-                          <Briefcase size={18} /> View Projects
-                        </button>
-                      </div>
-
-                      <div className="about-divider" style={{ opacity: stagger3, transition: 'opacity 0.2s' }}></div>
-
-                      <div className="about-connect-label" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>Connect with me</div>
-
-                      <div className="about-social-row" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                        <a href="https://github.com/ranjanadevi1802" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="GitHub"><Github size={20} /></a>
-                        <a href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="LinkedIn"><Linkedin size={20} /></a>
-                        <a href="https://leetcode.com/u/Ranjana_18/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="LeetCode"><Code size={20} /></a>
-                        <a href="mailto:ranjanadevi.180264@gmail.com" className="social-icon-btn" title="Email"><Mail size={20} /></a>
-
-                        <div className="status-pill">
-                          <span className="status-dot"></span> Available for Internship
-                        </div>
+                {/* The Cinematic Container */}
+                <div className="center-container" style={{ opacity: homeMainOpacity, transition: 'opacity 0.2s ease-out' }}>
+                  <div className="background-ticker-container" style={{ transform: `scale(${homeTickerScale})`, transformOrigin: 'center center', marginTop: '-12vh', transition: 'transform 0.2s ease-out' }}>
+                    <div className="background-ticker ticker-left">
+                      <div className="ticker-track">
+                        <span className="ticker-item color-white">DATA ANALYST</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-black">AI ENGINEER</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-white">MACHINE LEARNING</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-black">DATA SCIENTIST</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-white">UI/UX DESIGNER</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-black">DATA ANALYST</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-white">AI ENGINEER</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-black">MACHINE LEARNING</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-white">DATA SCIENTIST</span>
+                        <span className="ticker-bullet">•</span>
                       </div>
                     </div>
-
-                    {/* CENTER COLUMN (Portrait) */}
-                    <div className="about-image-center">
-                      <img
-                        src={asset('/Images/about.png')}
-                        alt="Ranjana Devi K"
-                        className="about-portrait-bw"
-                      />
-                    </div>
-
-                    {/* RIGHT COLUMN */}
-                    <div className="about-content-right">
-                      <div className="about-section-label" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                        WHAT I DO <span className="label-line"></span>
-                      </div>
-
-                      <div className="what-i-do-stack">
-                        <div className="neumorphic-card row-card" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                          <div className="card-icon-wrapper"><Brain size={20} /></div>
-                          <div className="card-text">
-                            <h4>AI & Machine Learning</h4>
-                            <p>Building predictive models, GenAI systems, and Gemini/Vertex AI integrations.</p>
-                          </div>
-                        </div>
-                        <div className="neumorphic-card row-card" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                          <div className="card-icon-wrapper"><BarChart size={20} /></div>
-                          <div className="card-text">
-                            <h4>Data Analytics & Power BI</h4>
-                            <p>Dynamic Power BI dashboards, DAX queries, and exploratory data analysis.</p>
-                          </div>
-                        </div>
-                        <div className="neumorphic-card row-card" style={{ opacity: stagger3, transform: `translateY(${20 * (1 - stagger3)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                          <div className="card-icon-wrapper"><Code size={20} /></div>
-                          <div className="card-text">
-                            <h4>Statistical Research</h4>
-                            <p>Numerical algorithm simulations and QSAR predictive modeling at IISc.</p>
-                          </div>
-                        </div>
-                        <div className="neumorphic-card row-card" style={{ opacity: stagger3, transform: `translateY(${20 * (1 - stagger3)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                          <div className="card-icon-wrapper"><Database size={20} /></div>
-                          <div className="card-text">
-                            <h4>Information Retrieval</h4>
-                            <p>Vector search engines, TF-IDF ranking, inverted indexing, and DBMS.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="about-section-label" style={{ marginTop: '25px', opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                        AT A GLANCE <span className="label-line"></span>
-                      </div>
-
-                      <div className="glance-grid">
-                        <div className="neumorphic-card grid-card" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                          <div className="card-icon-wrapper"><Award size={18} /></div>
-                          <div className="card-text">
-                            <h4>9.12</h4>
-                            <p>CGPA</p>
-                          </div>
-                        </div>
-                        <div className="neumorphic-card grid-card" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                          <div className="card-icon-wrapper"><Trophy size={18} /></div>
-                          <div className="card-text">
-                            <h4>2</h4>
-                            <p>Hackathons</p>
-                          </div>
-                        </div>
-                        <div className="neumorphic-card grid-card" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
-                          <div className="card-icon-wrapper"><GraduationCap size={18} /></div>
-                          <div className="card-text">
-                            <h4>B.Tech ISE</h4>
-                            <p>2027 Passout</p>
-                          </div>
-                        </div>
+                    <div className="background-ticker ticker-right">
+                      <div className="ticker-track">
+                        <span className="ticker-item color-black">DATA ANALYST</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-white">AI ENGINEER</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-black">MACHINE LEARNING</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-white">DATA SCIENTIST</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-black">UI/UX DESIGNER</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-white">DATA ANALYST</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-black">AI ENGINEER</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-white">MACHINE LEARNING</span>
+                        <span className="ticker-bullet">•</span>
+                        <span className="ticker-item color-black">DATA SCIENTIST</span>
+                        <span className="ticker-bullet">•</span>
                       </div>
                     </div>
                   </div>
 
+                  <div className="animate-fade-in-up" style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', position: 'absolute', bottom: 0, zIndex: 10 }}>
+                    <img
+                      src={asset('/Images/home.png')}
+                      alt="Ranjana Devi K"
+                      className="centered-image"
+                      style={{
+                        opacity: homeImageOpacity,
+                        transform: `scale(${homeImageScale}) translateY(${homeImageTranslateY}px)`,
+                        transformOrigin: 'bottom center',
+                        transition: 'transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1)'
+                      }}
+                    />
+                  </div>
                 </div>
+
+                {/* The About Canvas (3-Column Layout) */}
+                <div
+                  className="about-split-layout"
+                  style={{
+                    opacity: aboutImageOpacity,
+                    pointerEvents: aboutImageOpacity > 0 ? 'auto' : 'none',
+                    transition: 'opacity 0.2s ease-out',
+                    transform: `translateY(${50 * (1 - aboutImageOpacity)}px)`
+                  }}
+                >
+                  {/* LEFT COLUMN */}
+                  <div className="about-content-left">
+                    <div className="about-section-label" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                      ABOUT ME <span className="label-line"></span>
+                    </div>
+
+                    <h1 className="about-name-title" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>Ranjana<br />Devi K</h1>
+
+                    <h3 className="about-subtitle" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>AI Engineer • Data Analytics Specialist • ML Researcher</h3>
+
+                    <p className="about-description" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                      Data Analytics & AI Engineering student with a 9.12 CGPA, hands-on experience in statistical modeling and machine learning workflows, and a track record of building end-to-end data-driven solutions. Experienced in deploying predictive systems with Google Gemini, Vertex AI, custom vector search engines, and exploratory data analysis.
+                    </p>
+
+                    <div className="about-action-row" style={{ opacity: stagger3, transform: `translateY(${20 * (1 - stagger3)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                      <button className="btn-dark" onClick={() => handleNavClick('Project')}>
+                        <Briefcase size={18} /> View Projects
+                      </button>
+                    </div>
+
+                    <div className="about-divider" style={{ opacity: stagger3, transition: 'opacity 0.2s' }}></div>
+
+                    <div className="about-connect-label" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>Connect with me</div>
+
+                    <div className="about-social-row" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                      <a href="https://github.com/ranjanadevi1802" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="GitHub"><Github size={20} /></a>
+                      <a href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="LinkedIn"><Linkedin size={20} /></a>
+                      <a href="https://leetcode.com/u/Ranjana_18/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="LeetCode"><Code size={20} /></a>
+                      <a href="mailto:ranjanadevi.180264@gmail.com" className="social-icon-btn" title="Email"><Mail size={20} /></a>
+
+                      <div className="status-pill">
+                        <span className="status-dot"></span> Available for Internship
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* CENTER COLUMN (Portrait) */}
+                  <div className="about-image-center">
+                    <img
+                      src={asset('/Images/about.png')}
+                      alt="Ranjana Devi K"
+                      className="about-portrait-bw"
+                    />
+                  </div>
+
+                  {/* RIGHT COLUMN */}
+                  <div className="about-content-right">
+                    <div className="about-section-label" style={{ opacity: stagger1, transform: `translateY(${20 * (1 - stagger1)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                      WHAT I DO <span className="label-line"></span>
+                    </div>
+
+                    <div className="what-i-do-stack">
+                      <div className="neumorphic-card row-card" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                        <div className="card-icon-wrapper"><Brain size={20} /></div>
+                        <div className="card-text">
+                          <h4>AI & Machine Learning</h4>
+                          <p>Building predictive models, GenAI systems, and Gemini/Vertex AI integrations.</p>
+                        </div>
+                      </div>
+                      <div className="neumorphic-card row-card" style={{ opacity: stagger2, transform: `translateY(${20 * (1 - stagger2)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                        <div className="card-icon-wrapper"><BarChart size={20} /></div>
+                        <div className="card-text">
+                          <h4>Data Analytics & Power BI</h4>
+                          <p>Dynamic Power BI dashboards, DAX queries, and exploratory data analysis.</p>
+                        </div>
+                      </div>
+                      <div className="neumorphic-card row-card" style={{ opacity: stagger3, transform: `translateY(${20 * (1 - stagger3)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                        <div className="card-icon-wrapper"><Code size={20} /></div>
+                        <div className="card-text">
+                          <h4>Statistical Research</h4>
+                          <p>Numerical algorithm simulations and QSAR predictive modeling at IISc.</p>
+                        </div>
+                      </div>
+                      <div className="neumorphic-card row-card" style={{ opacity: stagger3, transform: `translateY(${20 * (1 - stagger3)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                        <div className="card-icon-wrapper"><Database size={20} /></div>
+                        <div className="card-text">
+                          <h4>Information Retrieval</h4>
+                          <p>Vector search engines, TF-IDF ranking, inverted indexing, and DBMS.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="about-section-label" style={{ marginTop: '25px', opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                      AT A GLANCE <span className="label-line"></span>
+                    </div>
+
+                    <div className="glance-grid">
+                      <div className="neumorphic-card grid-card" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                        <div className="card-icon-wrapper"><Award size={18} /></div>
+                        <div className="card-text">
+                          <h4>9.12</h4>
+                          <p>CGPA</p>
+                        </div>
+                      </div>
+                      <div className="neumorphic-card grid-card" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                        <div className="card-icon-wrapper"><Trophy size={18} /></div>
+                        <div className="card-text">
+                          <h4>2</h4>
+                          <p>Hackathons</p>
+                        </div>
+                      </div>
+                      <div className="neumorphic-card grid-card" style={{ opacity: stagger4, transform: `translateY(${20 * (1 - stagger4)}px)`, transition: 'opacity 0.2s, transform 0.2s' }}>
+                        <div className="card-icon-wrapper"><GraduationCap size={18} /></div>
+                        <div className="card-text">
+                          <h4>B.Tech ISE</h4>
+                          <p>2027 Passout</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-          )}
             </div>
-      </main>
-    </div>
+          )}
+        </div>
+      </main >
+    </div >
   )
 }
 
