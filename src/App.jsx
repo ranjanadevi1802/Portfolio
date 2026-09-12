@@ -824,6 +824,7 @@ function App() {
                         </h2>
 
                         <div className="cert-cards-container">
+
                           {/* Card 1 */}
                           <div
                             className="cert-card"
@@ -841,7 +842,7 @@ function App() {
                             <p className="cert-card-issuer">LinkedIn Learning (2026)</p>
                             <p className="cert-card-desc">Mastered dynamic business intelligence reporting, data modeling, custom DAX measures, and cross-filtering analytical dashboard views.</p>
                             <a
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              href="https://drive.google.com/file/d/1z1uaQ5f-_MwVQApludxnR5jrGwwhcgpJ/view?usp=sharing"
                               target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
@@ -867,7 +868,7 @@ function App() {
                             <p className="cert-card-issuer">FITA Academy</p>
                             <p className="cert-card-desc">Comprehensive certification in relational SQL database management, Python exploratory data analysis (Pandas & NumPy), and Power BI reporting.</p>
                             <a
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              href="https://drive.google.com/file/d/1ujUXfOIsZgxvCnI3BUHH-WrBCF1BIWI0/view?usp=sharing"
                               target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
@@ -893,7 +894,7 @@ function App() {
                             <p className="cert-card-issuer">SAWIT.AI Learnathon (GUVI, AICTE)</p>
                             <p className="cert-card-desc">Gained foundational mastery of LLM architectures, generative AI paradigms, prompt design, and practical AI workflow development.</p>
                             <a
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              href="https://drive.google.com/file/d/19YAb9H5rmiq-xBSPrrJNOyWLMuAhRHp8/view?usp=sharing"
                               target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
@@ -913,13 +914,13 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src={asset('/Icons/nptel.svg')} alt="NPTEL" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/google.svg')} alt="HACK2SKILLS" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
-                            <h3 className="cert-card-title">Programming, Data Structures & Algorithms</h3>
-                            <p className="cert-card-issuer">NPTEL</p>
-                            <p className="cert-card-desc">Rigorous academic curriculum covering algorithmic complexity, sorting, searching, recursion, and core data structure implementations using Python.</p>
+                            <h3 className="cert-card-title">Google Solution Code Challenge 2026</h3>
+                            <p className="cert-card-issuer">HACK2SKILLS</p>
+                            <p className="cert-card-desc">Blockchain-powered agricultural traceability platform designed to bring transparency, trust, and fairness to the agricultural supply chain.</p>
                             <a
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              href="https://drive.google.com/file/d/1ptQcjG5YNTad4r9xhXoU8i4gNr2MA4U0/view?usp=sharing"
                               target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
@@ -945,7 +946,33 @@ function App() {
                             <p className="cert-card-issuer">GUVI (HCL Group)</p>
                             <p className="cert-card-desc">Demonstrated core and advanced Python proficiency, object-oriented concepts, and computational problem solving.</p>
                             <a
-                              href="https://www.linkedin.com/in/ranjana-devi-k-b972013a9/"
+                              href="https://drive.google.com/file/d/15x1M65B2SeA7i9yb21u2cEQQ3avypqi1/view?usp=sharing"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="cert-credential-btn"
+                            >
+                              Show credentials
+                            </a>
+                          </div>
+
+                          {/* Card 6 */}
+                          <div
+                            className="cert-card"
+                            style={{
+                              opacity: certCard2Opacity,
+                              transform: `translateY(${certCard2TranslateY}px)`,
+                              transition: 'opacity 0.1s ease, transform 0.1s ease',
+                              visibility: certCard2Opacity === 0 ? 'hidden' : 'visible'
+                            }}
+                          >
+                            <div className="cert-card-icon">
+                              <img src={asset('/Icons/deloitte.svg')} alt="Deloitte" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            </div>
+                            <h3 className="cert-card-title">Cyber Job Simulation (Python, SQL, Power BI)</h3>
+                            <p className="cert-card-issuer">Deloitte</p>
+                            <p className="cert-card-desc">Learned Data Security, Ethical Hacking, Cyber Forensics, and Security concepts from industry experts.</p>
+                            <a
+                              href="https://drive.google.com/file/d/1kPNLVzuove-T8KCaDrybiKaoR9ByGA2s/view?usp=sharing"
                               target="_blank"
                               rel="noreferrer"
                               className="cert-credential-btn"
