@@ -836,7 +836,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src={asset('/Icons/linkedin-learning.svg')} alt="LinkedIn Learning" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/linkedin-learning.png')} alt="LinkedIn Learning" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Power BI: Dashboards for Beginners</h3>
                             <p className="cert-card-issuer">LinkedIn Learning (2026)</p>
@@ -888,7 +888,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src={asset('/Icons/Gemini icon.svg')} alt="SAWIT.AI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/guvi.jpg')} alt="SAWIT.AI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Fundamentals of Generative AI</h3>
                             <p className="cert-card-issuer">SAWIT.AI Learnathon (GUVI, AICTE)</p>
@@ -914,7 +914,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src={asset('/Icons/google.svg')} alt="HACK2SKILLS" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/google.jpg')} alt="HACK2SKILLS" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Google Solution Code Challenge 2026</h3>
                             <p className="cert-card-issuer">HACK2SKILLS</p>
@@ -940,7 +940,7 @@ function App() {
                             }}
                           >
                             <div className="cert-card-icon">
-                              <img src={asset('/Icons/guvi.svg')} alt="GUVI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              <img src={asset('/Icons/guvi.jpg')} alt="GUVI" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
                             <h3 className="cert-card-title">Python Programming</h3>
                             <p className="cert-card-issuer">GUVI (HCL Group)</p>
@@ -968,7 +968,7 @@ function App() {
                             <div className="cert-card-icon">
                               <img src={asset('/Icons/deloitte.svg')} alt="Deloitte" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                             </div>
-                            <h3 className="cert-card-title">Cyber Job Simulation (Python, SQL, Power BI)</h3>
+                            <h3 className="cert-card-title">Cyber Job Simulation</h3>
                             <p className="cert-card-issuer">Deloitte</p>
                             <p className="cert-card-desc">Learned Data Security, Ethical Hacking, Cyber Forensics, and Security concepts from industry experts.</p>
                             <a
